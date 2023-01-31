@@ -24,7 +24,7 @@ html {
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  #clubpenguinphoto {
+  .bluepenguin .img{
     align:center;
     margin-top: 20px;
     padding-top: 24px;
