@@ -33,6 +33,7 @@ html {
   body {
     background-image: url("homebkgd.JPG");
     background-size: auto;
+    
    }
 
    .core2Interaction {
@@ -47,7 +48,7 @@ html {
 
 
   .RenKo {
-    filter:blur(50px);
+    filter:blur(80px);
     transition: 0.3s all;
   }
 
