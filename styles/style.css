@@ -3,11 +3,39 @@
 
 body {
     color: red; 
+    
     font-family: IBM Plex Mono, monospace;
 
 }
     
 h3 {
     color:blue;
+    font-size: 2em;
     font-family: Montserrat, sans-serif;
+}
+
+.large-header {
+    font-size: 4em
+}
+
+#parm {
+    color: orange;
+    background-color: black;
+    margin-top:1em;
+    padding: 1em;
+}
+
+#parm summary {
+cursor: pointer
+}
+#parm summary:after{
+content:'+';
+}
+
+#parm[open] summary:after {
+    content: '-';
+}
+
+#parm li:last-child {
+background-color: aqua;
 }
