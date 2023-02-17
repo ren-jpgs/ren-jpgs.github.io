@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap');
+
+html{
+    background-color:#E0CB9E
+
+    
+}
+
+h1{
+    font-family:'Zen Kaku Gothic New', sans-serif;
+    font-size: 200px;
+    font-style: 400;
+}
+
+h2{
+    font-family:'Zen Kaku Gothic New', sans-serif;
+}
+
+.japanesetitle{
+    font-family: "ab-kazunaun-f", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
