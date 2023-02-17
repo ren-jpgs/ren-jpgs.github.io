@@ -165,3 +165,6 @@ content:' +';
 content: ' -';
 }                
 
+footer{
+    position: static;
+}
