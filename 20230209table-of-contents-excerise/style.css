@@ -1,0 +1,215 @@
+@import url('https://use.typekit.net/ows4iqd.css');
+
+
+html {
+    background-color:rgb(11, 142, 39);
+margin-top: 0% ;
+}
+
+H1{
+font-family: scotch-display, sans-serif;
+font-style: light;
+font-weight: 5;
+font-size: 300px;
+color: white
+
+}
+
+
+.table {
+    position: relative;
+    padding-top: -10px;
+    bottom: 8px;
+    left: 16px;
+    flex: 33.33%;
+  padding: 5px;
+}
+
+
+.redsphere img{ 
+  height: 250px;
+  width: 250px;
+  position: relative;
+    bottom: 8px;
+    right: 26px;
+
+}
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.redsphere {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border-radius:250px;
+  perspective: 900px; 
+  align-items: right;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .redsphere-inner {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius:250px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .redsphere:hover .redsphere-inner {
+    transform: rotatex(180deg);
+  }
+  
+  /* Position the front and back side */
+  .redsphere-front, .redsphere-back {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius:250px;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .redsphere-front {
+    background-color: rgb(220, 17, 17);
+    color: black;
+  }
+  
+  /* Style the back side */
+  .redsphere-back {
+    background-color: rgb(255, 30, 30);
+    color: white;
+    transform: rotateX(180deg);
+  }
+
+.table-redsphere {
+  display:flex;
+}
+
+
+.yellowsphere img{ 
+  height: 250px;
+  width: 250px;
+  position: relative;
+    bottom: 8px;
+    right: 26px;
+
+}
+
+.yellowsphere {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border-radius:250px;
+  perspective: 900px; 
+  align-items: right;
+}
+
+.yellowsphere-inner {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius:250px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  
+}
+
+.yellowsphere:hover .yellowsphere-inner {
+  transform: rotatex(180deg);
+}
+
+
+.yellowsphere-front, .yellowsphere-back {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius:250px;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+
+.yellowsphere-front {
+  background-color: rgb(236, 236, 11);
+  color: black;
+}
+
+
+.yellowsphere-back {
+  background-color: rgb(236, 236, 11);
+  color: white;
+  transform: rotateX(180deg);
+}
+
+.of {
+  position: static;
+    /* padding-top: -10px; */
+    /* bottom: 8px;
+    left: 16px; */
+    flex: 33.33%;
+  padding: 5px;
+}
+
+.of-yellowsphere{
+  display:flex;
+}
+
+.bluesphere img{ 
+  height: 250px;
+  width: 250px;
+  position: relative;
+    bottom: 8px;
+    right: 26px;
+
+}
+
+.bluesphere {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border-radius:250px;
+  perspective: 900px; 
+  align-items: right;
+}
+
+.bluesphere-inner {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius:250px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  
+}
+
+.bluesphere:hover .bluesphere-inner {
+  transform: rotatex(180deg);
+}
+
+
+.bluesphere-front, .bluesphere-back {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius:250px;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+
+.bluesphere-front {
+  background-color: rgb(11, 86, 236);
+  color: black;
+}
+
+
+.bluesphere-back {
+  background-color: rgb(11, 86, 236);
+  color: white;
+  transform: rotateX(180deg);
+}
+
