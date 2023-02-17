@@ -3,6 +3,7 @@
 html{
     background-color: rgb(245, 209, 27);
 }
+
 body {
     color: rgb(255, 255, 255); 
     
@@ -13,29 +14,54 @@ body {
 h1{
     color: aliceblue;
     font-family: Montserrat, sans-serif;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 600;
+    font-style: italic;
 
 }
+#gifs{
+    display: none;
+}
 
-h2{
-    font-size: 10
+.intro:hover + #gifs{
+    display: block;
+    color: red;
+}
+
+h2 { 
+    font-size: 20px;
+}
+
+h2::after{
+    content: "";
 }
 
 
 h3 {
-    color:blue;
+    color:rgb(61, 57, 3);
     font-size: 2em;
     font-family: Montserrat, sans-serif;
+    font-weight:600;
 }
 
-.large-header {
-    font-size: 4em
+h3::before,
+h3:after {
+    content:' 🧀 🧀';
 }
+
+.subtitle {
+    color: rgb(92, 85, 3);
+    font-size: 25px;
+}
+a:link { color:brown}
+a:visited {color: rgb(13, 57, 13);}
+a:hover{color:green}
+
+
 
 #parm {
     color: orange;
-    background-color: black;
+    background-color:  rgb(255, 252, 58);
     margin-top:1em;
     padding: 1em;
 }
@@ -52,5 +78,90 @@ content:'+';
 }
 
 #parm li:last-child {
-background-color: aqua;
+background-color: rgb(34, 49, 252);
 }
+
+
+
+#jack {
+color: orange;
+background-color: rgb(255, 252, 58);
+margin-top:1em;
+padding: 1em;
+}
+
+#jack summary {
+cursor: pointer
+ }
+
+#jack summary:after{
+content:' +';
+    }
+    
+#jack[open] summary:after {
+        content: ' -';
+    }
+
+
+
+
+ #cream {
+color: orange;
+background-color: rgb(255, 252, 58);
+margin-top:1em;
+padding: 1em;
+}
+
+    #cream summary {
+cursor: pointer
+}
+        
+#cream summary:after{
+content:' +';
+}
+            
+#cream[open] summary:after {
+content: ' -';
+            }
+
+
+
+
+#brie {
+color: orange;
+background-color: rgb(255, 252, 58);
+margin-top:1em;
+padding: 1em;
+}            
+
+#brie summary {
+cursor: pointer
+}
+                                        
+#brie summary:after{
+content:' +';
+}                
+                            
+#brie[open] summary:after {
+content: ' -';
+}  
+
+#feta{
+    color: orange;
+    background-color: rgb(255, 252, 58);
+    margin-top:1em;
+    padding: 1em;
+    }
+    
+#feta summary {
+cursor: pointer
+}
+                                            
+#feta summary:after{
+content:' +';
+}                
+                                
+#feta[open] summary:after {
+content: ' -';
+}                
+
