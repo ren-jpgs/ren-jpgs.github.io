@@ -1,0 +1,229 @@
+
+html{
+    background-color: #f9d78e;
+}
+
+.bkgrd img{
+    background-image: url('shadowcharacter.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+}
+
+
+.jap { 
+    font-family: "ab-kazunaun-f", sans-serif;
+font-weight: 400;
+font-style: normal;
+max-height: 40ch;
+position: relative;
+writing-mode: vertical-rl;
+font-size: 30px;
+
+}
+.jap2 { 
+    font-family: "ab-kazunaun-f", sans-serif;
+font-weight: 400;
+font-style: normal;
+max-height: 50ch;
+position: relative;
+writing-mode: vertical-rl;
+font-size: 30px;
+
+}
+
+.jap3 { 
+    font-family: "ab-kazunaun-f", sans-serif;
+font-weight: 400;
+font-style: normal;
+max-height: 50ch;
+position: relative;
+writing-mode: vertical-rl;
+font-size: 30px;
+
+}
+#sen1jap{
+    animation: fadeIn 7s;
+    cursor: pointer;
+    text-decoration: none;
+  color: #d2b577;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  filter: blur(1px);
+  margin-top: 100px;
+
+}
+
+
+#sen1jap:hover {
+    color: #796741;
+    text-shadow: 0 5px 15px #343027;
+    filter: blur(0px);
+  }
+
+
+  #sen2jap
+{
+    animation: fadeIn 8s;
+    cursor: pointer;
+    text-decoration: none;
+  color: #d2b577;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  filter: blur(1px);
+  margin-top: 100px; 
+margin-left:1080px;  
+}
+  
+
+
+#sen2jap:hover {
+    color: #796741;
+    text-shadow: 0 5px 15px #343027;
+    filter: blur(0px);
+  }
+
+  #sen3jap
+  {
+      animation: fadeIn 8s;
+      cursor: pointer;
+      text-decoration: none;
+    color: #d2b577;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    filter: blur(1px);
+    margin-top: 400px;
+    margin-left:1880px;  
+
+    
+  
+  }
+  
+  #sen3jap:hover {
+      color: #796741;
+      text-shadow: 0 5px 15px #343027;
+      filter: blur(0px);
+    }
+  
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+
+
+
+
+.eng{
+    font-family: "hellofont-id-shouxietongzhen", sans-serif;
+font-weight: 400;
+font-style: normal;
+writing-mode: horizontal-tb;
+font-size: 40px;
+max-width: 40ch;
+line-height: 30px;
+opacity: 0;
+transition: 5s;
+color:#795d1e; 
+margin-top: -600px; 
+margin-left: 280px;  
+}
+
+.eng2{
+    font-family: "hellofont-id-shouxietongzhen", sans-serif;
+font-weight: 400;
+font-style: normal;
+writing-mode: horizontal-tb;
+font-size: 40px;
+max-width: 50ch;
+line-height: 30px;
+opacity: 0;
+transition: 5s;
+color:#795d1e;   
+margin-top: -755px; 
+margin-left: 1330px;  
+}
+
+.eng3{
+    font-family: "hellofont-id-shouxietongzhen", sans-serif;
+font-weight: 400;
+font-style: normal;
+writing-mode: horizontal-tb;
+font-size: 40px;
+max-width: 40ch;
+line-height: 30px;
+opacity: 0;
+transition: 5s;
+color:#795d1e;   
+margin-top: -300px; 
+margin-left: 2290px;   
+}
+
+a:link {
+    color: black;
+    text-decoration:none;
+}
+a:visited { text-decoration: none; 
+color:rgb(255, 255, 255)}
+a:active{ text-decoration:none;
+color:white;}
+
+a:hover{
+    color: #fffefe;
+    text-shadow: 0 5px 15px #ffffff;
+    filter: blur(0px);
+}
+body {
+	font: 100 1.3em sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	padding: 0 5rem;
+    width: 3000px;
+    height: 3000px;
+}
+
+h1 {
+	font-weight: 100;
+}
+
+
+
+/* .box1{
+    display: flex;
+    justify-content: center;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-height: 750px) {
+    .jap1 {
+        font-size: 18px;
+        width: calc((100% - 10px) / 2);
+    }
+}
+
+@media (max-height: 750px) {
+    .sen1eng {
+        font-size: 25px;
+        width: calc((100% - 10px) / 2);
+    }
+}

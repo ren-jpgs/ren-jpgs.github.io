@@ -32,8 +32,8 @@
 
   body {
     background-image: url("homebkgd.JPG");
-    background-size: auto;
-    
+    background-size: cover;
+    background-repeat: no-repeat;
    }
 
    .core2Interaction {

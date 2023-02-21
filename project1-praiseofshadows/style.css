@@ -27,7 +27,7 @@ h2{
 font-family: "ab-kazunaun-f", sans-serif;
 font-weight: 400;
 font-style: normal;
-color:#695221;
+color:#927639;
 font-size:100px
 }
 
@@ -37,3 +37,6 @@ font-size:100px
     color:#695221
 }
 
+.rotate{
+    transform: rotate(-20deg)
+}
