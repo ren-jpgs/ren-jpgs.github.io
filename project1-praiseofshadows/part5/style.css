@@ -57,7 +57,6 @@ font-size: 30px;
   color: #d2b577;
   font-weight: normal;
   text-transform: uppercase;
-  transition: all 0.3s ease-in-out;
   filter: blur(1px);
   margin-top: 100px;
 
@@ -68,6 +67,7 @@ font-size: 30px;
     color: #f9d78e;
     text-shadow: 0 5px 15px #f9d78e;
     filter: blur(0px);
+    transition: all 0.3s ease-in-out;
   }
 
 
@@ -79,7 +79,6 @@ font-size: 30px;
   color: #d2b577;
   font-weight: normal;
   text-transform: uppercase;
-  transition: all 0.3s ease-in-out;
   filter: blur(1px);
   margin-top: 50px; 
 margin-left:1050px;  
@@ -91,6 +90,7 @@ margin-left:1050px;
     color: #f9d78e;
     text-shadow: 0 5px 15px #f9d78e;
     filter: blur(0px);
+    transition: all 0.3s ease-in-out;
   }
 
   #sen3jap
@@ -101,7 +101,6 @@ margin-left:1050px;
   color: #d2b577;
   font-weight: normal;
   text-transform: uppercase;
-  transition: all 0.3s ease-in-out;
   filter: blur(1px);
   margin-top: 300px; 
 margin-left:2236px;  
@@ -114,6 +113,7 @@ margin-left:2236px;
       color: #f9d78e;
       text-shadow: 0 5px 15px #f9d78e;
       filter: blur(0px);
+      transition: all 0.3s ease-in-out;
     }
   
  #sen4jap
@@ -124,7 +124,6 @@ margin-left:2236px;
   color: #d2b577;
   font-weight: normal;
   text-transform: uppercase;
-  transition: all 0.3s ease-in-out;
   filter: blur(1px);
   margin-top: 500px; 
 margin-left:2940px;  
@@ -136,6 +135,7 @@ margin-left:2940px;
     color: #f9d78e;
     text-shadow: 0 5px 15px #f9d78e;
     filter: blur(0px);
+    transition: all 0.3s ease-in-out;
   }
 
 
