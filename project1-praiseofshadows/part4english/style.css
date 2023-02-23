@@ -1,6 +1,6 @@
 
 html{
-    background-color: #0d0e21;
+    background-color: #000000;
 }
 
 
@@ -35,7 +35,7 @@ position: -webkit-sticky;
     animation: fadeIn 7s;
     cursor: pointer;
     text-decoration: none;
-  color: #191b41;
+  color: #5d5d5f;
   font-weight: normal;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
@@ -53,7 +53,7 @@ position: -webkit-sticky;
     animation: fadeIn 7s;
     cursor: pointer;
     text-decoration: none;
-  color: #191b41;
+  color: #424242;
   font-weight: normal;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
@@ -140,7 +140,7 @@ line-height: 30px;
 }
 a:hover{
     color: #fffefe;
-    text-shadow: 30px 30px 30px #ffc430;
+    text-shadow: 0px 5px 20px #ffc430;
     filter: blur(0px);
     font-family: "hellofont-id-shouxietongzhen", sans-serif;
 font-weight: 400;
@@ -149,7 +149,7 @@ writing-mode: horizontal-tb;
 font-size: 60px;
 max-width: 40ch;
 line-height: 30px;
-transition: 1s;
+transition: .8s;
  
 }
 body {

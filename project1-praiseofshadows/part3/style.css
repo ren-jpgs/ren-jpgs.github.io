@@ -1,5 +1,5 @@
 html{
-    background-color: #796741;
+    background-color: #655122;
     animation: fadeIn 5s;
     background-image: url(shadowcharacter.png);
     height: 100%;
@@ -22,6 +22,16 @@ html{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: #3c331d;
+    font-family: "hellofont-id-shouxietongzhen", sans-serif;
+font-weight: 400;
+font-style: normal;
+writing-mode: horizontal-tb;
+font-size: 35px;
+line-height: 20px;
+max-width: 500ch;
+
+
 }
 
 .eng1 {
@@ -79,21 +89,21 @@ opacity:0
 }
 
 a:link {
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration:none;
-    text-shadow: 0 5px 15px #343027;
+    text-shadow: 0 5px 15px #ffdb81;
 }
 a:visited { text-decoration: none; 
-color:rgb(0, 0, 0);
+color:rgb(255, 255, 255);
 text-shadow: 0 5px 15px #343027;
 }
 
 a:active{ text-decoration:none;
-color:white;}
+color:rgb(0, 0, 0);}
 
 a:hover{
-    color: #fffefe;
-    text-shadow: 0 5px 15px #ffffff;
+    color: #000000;
+    text-shadow: 0 5px 15px #000000;
     filter: blur(0px);
 }
 
