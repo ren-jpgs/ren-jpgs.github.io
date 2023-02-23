@@ -1,0 +1,184 @@
+
+html{
+    background-color: #0d0e21;
+    animation: fadeIn 5s;
+    height: 2000px;
+    width: 2000px;
+    
+}
+
+
+
+
+.jap { 
+    font-family: "ab-kazunaun-f", sans-serif;
+font-weight: 400;
+font-style: normal;
+position: relative;
+writing-mode: vertical-rl;
+font-size: 50px;
+position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+}
+
+.jap2 { 
+    font-family: "ab-kazunaun-f", sans-serif;
+font-weight: 400;
+font-style: normal;
+position: relative;
+writing-mode: vertical-rl;
+font-size: 50px;
+position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+#sen1jap{
+    animation: fadeIn 7s;
+    cursor: pointer;
+    text-decoration: none;
+  color: #191b41;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  filter: blur(5px);
+  
+
+
+}
+
+
+#sen1jap:hover {
+    color: #796741;
+    text-shadow: 0 5px 15px #343027;
+    filter: blur(0px);
+  }
+
+
+  #sen2jap{
+    animation: fadeIn 7s;
+    cursor: pointer;
+    text-decoration: none;
+  color: #191b41;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  filter: blur(5px);
+  max-height: 50ch;
+
+  
+
+
+}
+
+
+#sen2jap:hover {
+    color: #796741;
+    text-shadow: 0 5px 15px #343027;
+    filter: blur(0px);
+  }
+
+  
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+
+
+
+
+
+
+
+.button{
+    margin-left: -22px;
+    margin-bottom: -1px;
+    z-index: 8;
+    
+}
+
+a:link {
+    color: black;
+    text-decoration:none;
+    text-shadow: 0 5px 15px #343027;
+    font-family: "ab-kazunaun-f", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 80px;
+}
+a:visited { text-decoration: none; 
+color:rgb(0, 0, 0);
+text-shadow: 0 5px 15px #343027;
+font-family: "ab-kazunaun-f", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 80px
+}
+
+a:active{ text-decoration:none;
+color:white;
+font-family: "ab-kazunaun-f", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 80px}
+
+a:hover{
+    color: #fffefe;
+    text-shadow: 0 5px 15px #ffffff;
+    filter: blur(0px);
+    font-family: "ab-kazunaun-f", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 80px
+}
+body {
+	font: 100 1.3em sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	padding: 0 5rem;
+    height:200px
+    
+ 
+    
+
+}
+
+
+
+h1 {
+	font-weight: 100;
+}
+
+
+
+
+@media (max-height: 750px) {
+    .jap {
+        font-size: 50px;
+        width: calc((100% - 10px) / 2);
+        margin: -1px;
+    }
+}
+
+@media (max-height: 750px) {
+    .jap2 {
+        font-size: 20px;
+        width: calc((100% - 10px) / 2);
+    }
+}
+@media (max-height: 750px) {
+    .eng {
+        font-size: 25px;
+        width: calc((100% - 10px) / 2);
+        margin-left: 200px;
+        line-height: 20px;
+        max-width: 60ch;
+    }
+}
+

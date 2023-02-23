@@ -1,58 +1,51 @@
 
 html{
-    background-color: #141531;
+    background-color: #0d0e21;
+    animation: fadeIn 5s;
+    height: 2000px;
+    width: 2000px;
+    
 }
 
-.bkgrd img{
-    background-image: url('shadowcharacter.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    background-position: center;
-}
+
 
 
 .jap { 
     font-family: "ab-kazunaun-f", sans-serif;
 font-weight: 400;
 font-style: normal;
-max-height: 40ch;
 position: relative;
 writing-mode: vertical-rl;
-font-size: 30px;
+font-size: 50px;
+position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 
 }
+
 .jap2 { 
     font-family: "ab-kazunaun-f", sans-serif;
 font-weight: 400;
 font-style: normal;
-max-height: 50ch;
 position: relative;
 writing-mode: vertical-rl;
-font-size: 30px;
-
+font-size: 50px;
+position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
-.jap3 { 
-    font-family: "ab-kazunaun-f", sans-serif;
-font-weight: 400;
-font-style: normal;
-max-height: 50ch;
-position: relative;
-writing-mode: vertical-rl;
-font-size: 30px;
-
-}
 #sen1jap{
     animation: fadeIn 7s;
     cursor: pointer;
     text-decoration: none;
-  color: #d2b577;
+  color: #191b41;
   font-weight: normal;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
-  filter: blur(1px);
-  margin-top: 100px;
+  filter: blur(5px);
+  
+
 
 }
 
@@ -64,20 +57,21 @@ font-size: 30px;
   }
 
 
-  #sen2jap
-{
-    animation: fadeIn 8s;
+  #sen2jap{
+    animation: fadeIn 7s;
     cursor: pointer;
     text-decoration: none;
-  color: #d2b577;
+  color: #191b41;
   font-weight: normal;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
-  filter: blur(1px);
-  margin-top: 100px; 
-margin-left:1080px;  
-}
+  filter: blur(5px);
+  max-height: 50ch;
+
   
+
+
+}
 
 
 #sen2jap:hover {
@@ -86,28 +80,6 @@ margin-left:1080px;
     filter: blur(0px);
   }
 
-  #sen3jap
-  {
-      animation: fadeIn 8s;
-      cursor: pointer;
-      text-decoration: none;
-    color: #d2b577;
-    font-weight: normal;
-    text-transform: uppercase;
-    transition: all 0.3s ease-in-out;
-    filter: blur(1px);
-    margin-top: 400px;
-    margin-left:1880px;  
-
-    
-  
-  }
-  
-  #sen3jap:hover {
-      color: #796741;
-      text-shadow: 0 5px 15px #343027;
-      filter: blur(0px);
-    }
   
 
 @keyframes fadeIn {
@@ -120,68 +92,49 @@ margin-left:1080px;
 
 
 
-.eng{
-    font-family: "hellofont-id-shouxietongzhen", sans-serif;
-font-weight: 400;
-font-style: normal;
-writing-mode: horizontal-tb;
-font-size: 40px;
-max-width: 40ch;
-line-height: 30px;
-opacity: 0;
-transition: 5s;
-color:#795d1e; 
-margin-top: -600px; 
-margin-left: 280px;  
-}
 
-.eng2{
-    font-family: "hellofont-id-shouxietongzhen", sans-serif;
-font-weight: 400;
-font-style: normal;
-writing-mode: horizontal-tb;
-font-size: 40px;
-max-width: 50ch;
-line-height: 30px;
-opacity: 0;
-transition: 5s;
-color:#795d1e;   
-margin-top: -755px; 
-margin-left: 1330px;  
-}
 
-.eng3{
-    font-family: "hellofont-id-shouxietongzhen", sans-serif;
-font-weight: 400;
-font-style: normal;
-writing-mode: horizontal-tb;
-font-size: 40px;
-max-width: 40ch;
-line-height: 30px;
-opacity: 0;
-transition: 5s;
-color:#795d1e;   
-margin-top: -300px; 
-margin-left: 2290px;   
+
+.button{
+    margin-left: -22px;
+    margin-bottom: -1px;
+    z-index: 8;
+    
 }
 
 a:link {
     color: black;
     text-decoration:none;
     text-shadow: 0 5px 15px #343027;
+    font-family: "ab-kazunaun-f", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 80px;
 }
 a:visited { text-decoration: none; 
 color:rgb(0, 0, 0);
 text-shadow: 0 5px 15px #343027;
+font-family: "ab-kazunaun-f", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 80px
 }
 
 a:active{ text-decoration:none;
-color:white;}
+color:white;
+font-family: "ab-kazunaun-f", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 80px}
 
 a:hover{
     color: #fffefe;
     text-shadow: 0 5px 15px #ffffff;
     filter: blur(0px);
+    font-family: "ab-kazunaun-f", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 80px
 }
 body {
 	font: 100 1.3em sans-serif;
@@ -189,9 +142,11 @@ body {
 	flex-direction: column;
 	align-content: center;
 	padding: 0 5rem;
-    width: 3000px;
-    height: 3000px;
+    height:200px
     
+ 
+    
+
 }
 
 
@@ -202,35 +157,28 @@ h1 {
 
 
 
-/* .box1{
-    display: flex;
-    justify-content: center;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-height: 750px) {
-    .jap1 {
-        font-size: 18px;
+    .jap {
+        font-size: 50px;
         width: calc((100% - 10px) / 2);
+        margin: -1px;
     }
 }
 
 @media (max-height: 750px) {
-    .sen1eng {
+    .jap2 {
+        font-size: 20px;
+        width: calc((100% - 10px) / 2);
+    }
+}
+@media (max-height: 750px) {
+    .eng {
         font-size: 25px;
         width: calc((100% - 10px) / 2);
+        margin-left: 200px;
+        line-height: 20px;
+        max-width: 60ch;
     }
 }
+
