@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@300;400&display=swap);
 
 body{
     padding: 10vw;
@@ -278,4 +278,70 @@ filter:drop-shadow(0 5px 25px #4b05cd);
     display: inline-block;
     filter: blur(10px);
     transform: rotate(60deg);
+}
+
+#greencircle1{
+    position: absolute;
+    top:22%;
+    left:55%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    width: 100px;
+    background:repeating-radial-gradient( #24423f,#172220);
+    filter:drop-shadow(0 5px 25px #5e0626);
+    border-radius: 50%;
+    display: inline-block;
+    filter: blur(10px);
+    transform: rotate(20deg);
+}
+#greencircle2{
+    position: absolute;
+    top:22%;
+    left:47%;
+    transform: translate(-50%, -50%);
+    height: 150px;
+    width: 100px;
+    background:repeating-radial-gradient( #24423f,#172220);
+    filter:drop-shadow(0 5px 25px #000000);
+    border-radius: 50%;
+    display: inline-block;
+    filter: blur(15px);
+    transform: rotate(-10deg);
+    opacity: 85%;
+}
+
+#greencircle3{
+    position: absolute;
+    top:32%;
+    left:58%;
+    transform: translate(-50%, -50%);
+    height: 150px;
+    width: 100px;
+    filter:drop-shadow(0 5px 25px #000000);
+    border-radius: 50%;
+    display: inline-block;
+    filter: blur(15px);
+    transform: rotate(25deg);
+    border: 20px solid #172220;
+}
+
+#pinkcircle{
+    position: absolute;
+    top:70%;
+    left:35%;
+    transform: translate(-50%, -50%);
+    height: 150px;
+    width: 150px;
+    filter:drop-shadow(0 5px 25px #000000);
+    background:#994971;
+    border-radius: 50%;
+    display: inline-block;
+    filter: blur(15px);
+    opacity: 80%;
+   
+}
+
+h4{
+    font-size: 100px;
+    z-index: 20;
 }
