@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@300;400&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Open+Sans:wght@300;400&display=swap);
 
 body{
     padding: 10vw;
@@ -157,6 +157,11 @@ filter:drop-shadow(0 5px 25px #4b05cd);
     align-items: center;
 }
 
+.DevinKenny:hover{
+    transition: .5s;
+    filter:drop-shadow(0 5px 25px #4b05cd);
+    
+    }
 #backbox{
         position: absolute;
         top: 50%;
@@ -187,6 +192,20 @@ filter:drop-shadow(0 5px 25px #4b05cd);
     
     
   }   
+  #whiteblob1{
+        position: absolute;
+        top: 70%;
+        left:58%;
+        transform: translate(-50%, -50%);
+        height: 200px;
+        width: 250px;
+        background:repeating-radial-gradient( #ffffff,#989898);
+        filter:drop-shadow(35 35px 35px #954f1d);
+        border-radius: 50%;
+        display: inline-block;
+        filter: blur(10px);
+    }
+
 
   #yellow{
     position: absolute;
@@ -201,6 +220,7 @@ filter:drop-shadow(0 5px 25px #4b05cd);
     
     
   }
+ 
   
 
 
@@ -213,6 +233,12 @@ filter:drop-shadow(0 5px 25px #4b05cd);
   justify-content: center;
   align-items: center;
  } 
+
+ .JeffElrod:hover{
+    transition: .5s;
+    filter:drop-shadow(0 5px 25px #4b05cd);
+    
+    }
   
  #canvas{
     position: absolute;
@@ -237,6 +263,7 @@ filter:drop-shadow(0 5px 25px #4b05cd);
     box-shadow: inset 0 0 30px 20px rgb(205, 203, 203);
     
 }
+
 
 #redcircle1{
     position: absolute;
@@ -341,7 +368,102 @@ filter:drop-shadow(0 5px 25px #4b05cd);
    
 }
 
-h4{
-    font-size: 100px;
-    z-index: 20;
-}
+#scribble1{
+    font-family: 'Comic Neue', cursive;
+    font-size: 300px;
+    font-weight: 300;
+     z-index: 50px;
+     transform: skew(-20deg, 60deg);
+     color:rgb(230, 227, 227);
+     position: absolute;
+    top: 24%;
+    left:35%;
+     
+ }
+
+#scribble2{
+    font-family: 'Comic Neue', cursive;
+    font-size: 500px;
+    font-weight: 300;
+     z-index: 50px;
+     transform: skew(30deg, 40deg);
+     color:rgb(230, 227, 227);
+     position: absolute;
+    top:15%;
+    left:35%;
+     
+ 
+ }
+ #scribble3{
+    font-family: 'Comic Neue', cursive;
+    font-size: 400px;
+    font-weight: 300;
+     z-index: 50px;
+     transform: skew(10deg, 50deg);
+     color:rgb(230, 227, 227);
+     position: absolute;
+    top:20%;
+    left:25%;
+     
+ 
+ }
+ #scribble4{
+    font-family: 'Comic Neue', cursive;
+    font-size: 400px;
+    font-weight: 300;
+     z-index: 50px;
+     transform: skew(-40deg, -20deg);
+     color:rgb(230, 227, 227);
+     position: absolute;
+    top:30%;
+    left:35%;
+ }
+
+ #scribble5{
+    font-family: 'Comic Neue', cursive;
+    font-size: 500px;
+    font-weight: 300;
+     z-index: 50px;
+     transform: skew(22deg, 50deg);
+     color:rgb(230, 227, 227);
+     position: absolute;
+    top:30%;
+    left:35%;
+ }
+
+ #scribble6{
+    font-family: 'Comic Neue', cursive;
+    font-size: 500px;
+    font-weight: 300;
+     z-index: 50px;
+     transform: skew(-30deg, -0deg);
+     color:rgb(230, 227, 227);
+     position: absolute;
+    top:20%;
+    left:35%;
+ }
+
+ #scribble7{
+    font-family: 'Comic Neue', cursive;
+    font-size: 400px;
+    font-weight: 300;
+     z-index: 50px;
+     transform: skew(-40deg, -20deg);
+     color:rgb(230, 227, 227);
+     position: absolute;
+    top:30%;
+    left:35%;
+ }
+
+ #scribble8{
+    font-family: 'Comic Neue', cursive;
+    font-size: 400px;
+    font-weight: 300;
+     z-index: 50px;
+     transform: skew(-40deg, -20deg);
+     color:rgb(230, 227, 227);
+     position: absolute;
+    top:30%;
+    left:35%;
+ }
+
