@@ -1,12 +1,17 @@
 @import url(https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Open+Sans:wght@300;400&display=swap);
 
+:root{
+    --spacing:10vw;
+    
+}
+
 body{
-    padding: 10vw;
+    padding: var(--spacing);
     background-color: #000000;
 }
 
 header{
-    margin-bottom:20vh;
+    margin-bottom: calc(2 * var(--spacing));
     color:aliceblue;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;

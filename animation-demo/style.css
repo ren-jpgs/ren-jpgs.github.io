@@ -1,0 +1,87 @@
+body{
+    background: rgb(50, 163, 38);
+}
+
+@keyframes floating{
+0%{
+    transform: translatex(0px);
+    transform: scale(1);
+    filter:blur(0);
+    background-color:red
+    
+}
+100%{
+    transform: translatex(3.5vh)
+}
+
+}
+
+.cls-3{
+animation: floating 4s infinite alternate ease-in-out;
+}
+
+.cls-4{
+    animation: floating 4s infinite alternate ease-in-out;
+}
+
+circles.cls-3{
+    animation: floating 6s infinite alternate ease-in-out;
+}
+.sphere:hover{
+    animation-play-state:paused;
+    cursor: pointer;
+}
+
+p{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh
+
+}
+
+
+#swirl{
+    width:3700vw;
+    animation:swirlSpin 6s infinite;
+}
+
+
+
+
+@keyframes swirlSpin{
+    0%{
+    transform: rotate(0turn);
+    }
+    100%{
+        transform: rotate(1turn);
+    }
+
+
+}
+
+
+
+.cls-5 {
+    animation: swing ease-in-out 1s infinite alternate;
+    transform-origin: center -20px;
+    float:left;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.cls-5:after{
+    content: '';
+    position: absolute;  
+    width: 20px; height: 20px;  
+    border: 1px solid #999;
+    top: -10px; left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+
+@keyframes swing {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+}

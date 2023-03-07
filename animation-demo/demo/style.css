@@ -1,0 +1,74 @@
+body{
+    background: rgb(50, 163, 38);
+}
+
+@keyframes floating{
+0%{
+    transform: translateY(0px);
+    transform: scale(1);
+    filter:blur(0);
+    background-color:red
+    
+}
+100%{
+    transform: translateY(100vh)
+}
+
+}
+
+.sphere{
+width:200px;
+height: 200px;
+background: yellow;
+border-radius: 50%;
+animation: floating 3s infinite alternate ease-in-out;
+
+}
+
+.sphere:hover{
+    animation-play-state:paused;
+    cursor: pointer;
+}
+
+p{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh
+
+}
+
+
+#swirl{
+    width:3700vw;
+    animation:swirlSpin 6s infinite;
+}
+
+
+
+
+@keyframes swirlSpin{
+    0%{
+    transform: rotate(0turn);
+    }
+    100%{
+        transform: rotate(1turn);
+    }
+
+
+}
+
+polygon{
+    animation: color 2s infinite;
+}
+
+
+@keyframes color{
+0%{
+fill: default;
+}
+100%{
+    fill: rgb(255, 255, 255);
+}
+
+}
