@@ -1,0 +1,26 @@
+body{
+    background-color: green;
+    margin:0;
+    padding:20px;
+}
+
+#garden{
+    max-width:800px;
+    margin:0 auto;
+
+}
+
+.flower{
+    color:pink;
+    font-size: 36px;
+    font-family: arial; 
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center; 
+
+}
+
+.flower1{
+    background-color:blue
+}
