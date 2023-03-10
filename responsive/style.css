@@ -3,7 +3,10 @@
 :root{
     --spacing: 10vw;
     --fontweight: 400;
-    
+    --text-align: center;
+    --font-family:'Open Sans', sans-serif;
+    --top: 50%;
+    --transform: translate(-50%, -50%);
 }
 
 body{
@@ -14,43 +17,40 @@ body{
 header{
     margin-bottom: calc(2 * var(--spacing));
     color:aliceblue;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-family);
     font-weight: var(--fontweight);
-    font-size: 5rem;
-    text-align: center
+    font-size: 2em;
+    text-align: var(--text-align);
 }
 
 h1{
-    font-size:  3rem;
-    text-align: center;
+    font-size:  .5em;
+    text-align: var(--text-align);
     color: darkred;
 }
 
 h2{
     font-style: italic;
-    font-size:  5rem;
-    text-align: center;
+    font-size:  1em;
+    text-align: var(--text-align);
 }
 figcaption{
     margin-top:1em;
    color: white;
-   font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size:  1rem;
-    text-align: center;
+   font-family: var(--font-family);
+    font-weight: var(--fontweight);
+    font-size:  1em;
+    text-align: var(--text-align);
 }
-/* 
-figcaption a{
-    
-} */
+
 
 .JamesTurrell{
-    width: 1200px;
-  height: 1000px;
+    width: 70vh;
+  height: 60vh;
   position: relative;
   display:flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: var(--text-align);
+  align-items: var(--text-align);
   
   
 
@@ -58,81 +58,81 @@ figcaption a{
 
  .JamesTurrell:hover{
 transition: .5s;
-filter:drop-shadow(0 5px 25px #4b05cd);
+filter:drop-shadow(0 5vh 15vh #4b05cd);
 
 }
 
 #border{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: var(--top);
+    left: var(--top);
+    transform: var(--transform);
     width: 80%;
     height: 80%; 
-    border: 6px solid rgb(255, 65, 144);
-    filter:drop-shadow(0 5px 15px #ff61da);
+    border: .4vh solid rgb(255, 65, 144);
+    filter:drop-shadow(0 1vh 3vh #ff61da);
     background-color: #602bf2;
-    -webkit-box-shadow: inset 0 0 90px 110px rgb(189, 13, 163);
+    -webkit-box-shadow: inset 0 0 5vh 6vh  rgb(189, 13, 163);
     
   }
 
 #box1{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: var(--top);
+    left: var(--top);
+    transform: var(--transform);
     width: 32%;
-    height: 32%; 
-    border: 2px solid rgb(170, 79, 255);
+    height: 30%; 
+    border: .2vh solid rgb(170, 79, 255);
     opacity: 35%;
-    filter:drop-shadow(0 5px 25px #120ef8);
+    filter:drop-shadow(0 1vh 1vh #120ef8);
     background: repeating-radial-gradient( #7d10ac,#4a29dc);
-    -webkit-box-shadow: inset 0 0 90px 110px rgb(103, 37, 93);
-    box-shadow: inset 0 0 40px 20px rgb(76, 0, 255);
+    -webkit-box-shadow: inset 0 0 90vh 110vh rgb(103, 37, 93);
+    box-shadow: inset 0 0 30vh 20vh rgb(76, 0, 255);
     
     
   }
 
  #box2{
     position: absolute;
-    top: 50%;
-    left: 44.9%;
-    transform: translate(-50%, -50%);
-    border-bottom: 40px solid transparent;
-	border-Top: 30px solid transparent;
-    border-left: 260px solid #7b16e0;
-    height: 310px;
-    filter:blur(10px)
+    top: var(--top);
+    left: 45%;
+    transform: var(--transform);
+    border-bottom: 2vh solid transparent;
+	border-Top: 2vh solid transparent;
+    border-left: 15vh solid #7b16e0;
+    height: 18vh;
+    filter:blur(.5vh)
 
 }
 
 
 #box2border{
     position: absolute;
-    top: 50%;
+    top: var(--top);
     left: 46.5%;
-    transform: translate(-50%, -50%);
-    border-bottom: 30px solid transparent;
-	border-Top: 30px solid transparent;
-    border-left: 300px solid #ffaff4;
-    height: 320px;
+    transform: var(--transform);
+    border-bottom: 2vh solid transparent;
+	border-Top: 2vh solid transparent;
+    border-left: 18vh solid #ffaff4;
+    height: 18vh;
     opacity: 30%;
-    filter: blur(6px)
+    filter: blur(.5vh)
   
 
 }
 
 #box2shadowborder{
     position: absolute;
-    top: 50%;
-    left: 45.5%;
-    transform: translate(-50%, -50%);
-    border-bottom: 30px solid transparent;
-	border-Top: 30px solid transparent;
-    border-left: 280px solid #3270f6;
-    height: 320px;
+    top: var(--top);
+    left: 46%;
+    transform: var(--transform);
+    border-bottom: 2vh solid transparent;
+	border-Top: 2vh solid transparent;
+    border-left: 16vh solid #3270f6;
+    height: 18vh;
     opacity: 40%;
-    filter: blur(6px)
+    filter: blur(.4vh)
   
 
 }
@@ -141,17 +141,74 @@ filter:drop-shadow(0 5px 25px #4b05cd);
 
  #box3{
     position: absolute;
-    top: 50%;
-    left: 38.3%;
-    transform: translate(-50%, -50%);
-    border-bottom: 50px solid transparent;
-	border-Top: 50px solid transparent;
-    border-left: 100px solid #3d5aff;
-    height: 310px;
+    top: var(--top);
+    left: 39%;
+    transform: var(--transform);
+    border-bottom: 2.5vh solid transparent;
+	border-Top: 2vh solid transparent;
+    border-left: 5.5vh solid #3d5aff;
+    height: 17vh;
     opacity: 70%;
-    filter:blur(18px)
+    filter:blur(1vh)
 
 } 
 
+@media (min-width: 600px){
+body{
+    background-color: #e30202;
+}
+#border{
+    border: .4vh solid rgb(0, 0, 0);
+    filter:drop-shadow(0 1vh 3vh #11e30d);
+    background-color: #0a0a0a;
+    -webkit-box-shadow: inset 0 0 5vh 6vh  rgb(255, 0, 230);
+  }
+
+ #box2{
+    height: 30vh;
+    border-left: 15vh solid #830404; 
+    border-bottom: 5vh solid transparent;
+	border-Top: 5vh solid transparent;
+
+}
 
 
+#box2border{
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    border-bottom: 1vh solid transparent;
+	border-Top: 5vh solid transparent;
+    border-left: 20vh solid #ffaff4;
+  
+
+}
+
+#box2shadowborder{
+    border-bottom: 30vh solid transparent;
+	border-Top: 21vh solid transparent;
+    border-left: 26vh solid #b2ff3d;
+    filter: blur(2vh)
+  
+
+}
+
+
+
+@media (min-width: 1200px){
+    body{
+        background-color: #ff6f0f;
+    }
+    #border{
+        border-radius: 50%;
+        height:70vh;
+        border: 1vh solid rgb(150, 68, 13);
+        filter:blur(1vh);
+        background-color: #e01801;
+        -webkit-box-shadow: inset 0 0 5vh 6vh  rgb(255, 71, 135);
+        
+      }
+      #box2{
+        opacity: 0%;}
+}
+}
