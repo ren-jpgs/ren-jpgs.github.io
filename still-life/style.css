@@ -1,0 +1,202 @@
+            
+ :root{
+    --width: 1vw;
+    --height: 25vw;
+    --background: rgb(242, 54, 86);
+    --transform: skew(50deg,-10deg);
+    --align-items: center;
+    --display: block;
+   --margin-top: 35.2vw;
+   --margin-left: 20vw;
+   --margin-right: auto;
+    --position: absolute;
+
+ }
+ .orange {
+    border-radius: 50%;
+    width: 8vw;
+    height: 8vw;
+    background: rgb(248, 128, 15);
+    margin-top: 33vw; 
+    margin-left: 43vw;
+    margin-right: auto;
+    position: absolute;
+ }
+ 
+ .box {
+    width: 17vw;
+    height: 8vw;
+    background: rgb(186, 184, 184);
+    transform: skew(30deg,-6deg);
+    align-items: center;
+    display: block;
+   margin-top: 35vw;
+   margin-left: 19vw;
+    margin-right: auto;
+    position: absolute;
+    
+  }
+ .cassette {
+    border-radius: 8%;
+    width: 10vw;
+    height: 8vw;
+    background: rgb(126, 126, 144);
+    opacity: 50%;
+    transform: skew(-3deg,-10deg) ;
+    align-items: center;
+    display: block;
+   margin-top: 31.5vw;
+   margin-left: 22vw;
+    margin-right: auto;
+    position: absolute;
+    
+  }
+
+  #cassettehole1 {
+    border-radius: 50%;
+    width: 1.3vw;
+    height: 1.8vw;
+    background: rgb(123, 123, 123);
+    margin-top: 34.5vw; 
+    margin-left: 24.5vw;
+    margin-right: auto;
+    position: absolute;
+    
+  }
+
+
+  #cassettehole2 {
+    border-radius: 50%;
+    width: 1.3vw;
+    height: 1.8vw;
+    background: rgb(123, 123, 123);
+    margin-top: 33.8vw; 
+    margin-left: 29vw;
+    margin-right: auto;
+    position: absolute;
+    
+  }
+ 
+ .mirror {
+    border-radius: 50%;
+    width: 18vw;
+    height: 18vw;
+    transform: skew(-7deg);
+    background: rgb(215, 215, 215);
+    border: .8em solid rgb(244, 244, 244);
+    margin-top: 20vw; 
+    margin-left: 30vw;
+    margin-right: auto;
+    position: absolute;
+
+  
+
+  }
+
+.wine{
+    transform: rotate(180deg);
+        height: 10vw;
+        width: 10vw;
+        border-radius: 150px 150px 0 0;
+        background-color: rgb(141, 148, 10);
+    margin-top: 6vw; 
+    margin-left: 55vw;
+    margin-right: auto;
+    position: absolute;
+    opacity: 70%;
+}
+
+.winetube{
+    border-radius: 8%;
+    width: 2.6vw;
+    height: 7vw;
+        background-color: rgb(141, 148, 10);
+    margin-top: 15vw; 
+    margin-left: 58.7vw;
+    margin-right: auto;
+    position: absolute;
+    opacity: 70%;
+}
+
+.glass{
+    transform: rotate(180deg);
+        height: 16vw;
+        width: 6vw;
+        border-radius: 200px 200px 0 0;
+        background-color: rgb(198, 249, 249);
+    margin-top: 15vw; 
+    margin-left: 57vw;
+    margin-right: auto;
+    position: absolute;
+    opacity: 70%;
+}
+
+.glassstand{
+    border-radius: 8%;
+    width: 2vw;
+    height: 8vw;
+        background-color: rgb(198, 249, 249);
+    margin-top: 31vw; 
+    margin-left: 58.9vw;
+    margin-right: auto;
+    position: absolute;
+    opacity: 70%;
+}
+
+.glassbottom{
+border-radius: 50%;
+width: 7vw;
+height:3vw;
+background:  rgb(198, 249, 249);
+margin-top: 38vw;
+margin-left: 56.5vw;
+margin-right: auto;
+position: absolute;
+opacity: 70%;
+}
+
+.bottle{
+ 
+        height: 20vw;
+        width: 15vw;
+        border-radius: 200px 200px 15px 15px;
+        background-color: rgb(225, 225, 225);
+    margin-top: 28vw; 
+    margin-left: 67vw;
+    margin-right: auto;
+    position: absolute;
+    opacity: 60%;
+}
+
+.bottletube{
+    border-radius: 8%;
+    width: 7vw;
+    height: 15vw;
+        background-color: rgb(225, 225, 225);;
+    margin-top: 14vw; 
+    margin-left: 71vw;
+    margin-right: auto;
+    position: absolute;
+    opacity: 70%;
+}
+  .cloth {
+    width: 60vw;
+    height: 25vw;
+    background: repeating-linear-gradient(
+    270deg,
+    pink,
+    pink 10px,
+    rgb(242, 54, 86) 10px,
+    rgb(242, 54, 86) 15px
+    );
+    transform: skew(50deg,-10deg);
+    align-items: center;
+    display: block;
+   margin-top: 30vw;
+   margin-left: 20vw;
+    margin-right: auto;
+    position: absolute;
+    
+  }
+
+ 
