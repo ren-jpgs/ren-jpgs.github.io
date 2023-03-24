@@ -21,8 +21,7 @@ const renderItems = (collection) => {
 
 		// This can get annoying, so we can use “template literals” instead
 		const itemDetails =
-			`<p>${item.name}</p>
-			<p>${item.where}</p>
+			`<p>${item.where}</p>
 			<p>"${item.cost}"</p>
 			<p>${item.likes}</p>
 			<p>${item.beverage}</p>
