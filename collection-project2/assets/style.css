@@ -4,7 +4,9 @@
 	--spacing: 1em;
 }
 
-
+html{
+	background-color: rgb(0, 119, 255);
+}
 
 body {
 	font-family: sans-serif;
@@ -16,11 +18,10 @@ aside { margin-bottom: calc(4 * var(--spacing)); }
 
 h1 { font-size: 200%; }
 
-h2 { font-weight: bold; }
+h2 { 
+	font-weight: bold; 
+}
 
-a { color: blue; }
-
-em { font-style: italic }
 
 ul {
 	display: grid;
@@ -36,7 +37,7 @@ li {
 .faded { opacity: 0.333 }
 
 img{
-	width:20vw;
+	width: 17vw;
 }
 
 #name{
