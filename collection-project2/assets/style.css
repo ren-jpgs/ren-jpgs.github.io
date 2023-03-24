@@ -18,9 +18,7 @@ aside { margin-bottom: calc(4 * var(--spacing)); }
 
 h1 { font-size: 200%; }
 
-h2 { 
-	font-weight: bold; 
-}
+h2 { font-weight: bold; }
 
 
 ul {
