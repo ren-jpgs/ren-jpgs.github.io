@@ -1,7 +1,7 @@
 [
 	{
-		"mugImage": "AnnaBui.png",
-		"name": "Anna B",
+		"mugImage": "images/AnnaBui.png",
+		"name": "Anna B, 20 ",
 		"where": "Aug 2022 bed bath & beyond 6th ave nyc (first cup i ever bought for myself)",
 		"cost" : "$15-20",
 		"likes": "pleasant color, fit nicely in my hand, looks like good quality",
@@ -9,110 +9,94 @@
 	},
 	{
 		
-		"mugImage": "celeste.png",
+		"mugImage": "images/celeste.png",
 		"name": "Celeste D, 20",
-		"where": "Aug 2022 bed bath & beyond 6th ave nyc (first cup i ever bought for myself)",
-		"cost" : "$15-20",
-		"likes": "pleasant color, fit nicely in my hand, looks like good quality",
-		"beverage": "milk,tea,juice"
+		"where": "I bought it at a Starbucks in Nara, Japan on vacation!",
+		"cost" : "don't remember",
+		"likes": "They are only sold in that city so it made a nice souvenir and I really like green.",
+		"beverage": "Chai and coffee"
 	},
 	{
 		
-		"mugImage": "AnnaBui.png",
-		"name": "Anna B",
-		"where": "Aug 2022 bed bath & beyond 6th ave nyc (first cup i ever bought for myself)",
-		"cost" : "$15-20",
-		"likes": "pleasant color, fit nicely in my hand, looks like good quality",
-		"beverage": "milk,tea,juice"
+		"mugImage": "images/drithi.png",
+		"name": "Drithi K, 20",
+		"where": "From Five Below, when my roommates and I went there for the first time.",
+		"cost" : "$5",
+		"likes": "it looks like the mug from the Office which is one of my favorite shows. it's also kind of ugly funny",
+		"beverage": "coffee"
 	},
 	{
 		
-		"mugImage": "AnnaBui.png",
-		"name": "Anna B",
-		"where": "Aug 2022 bed bath & beyond 6th ave nyc (first cup i ever bought for myself)",
-		"cost" : "$15-20",
-		"likes": "pleasant color, fit nicely in my hand, looks like good quality",
-		"beverage": "milk,tea,juice"
+		"mugImage": "images/HelenWu.png",
+		"name": "Helen W, 20",
+		"where": "Bought it from Crate&Barrel",
+		"cost" : "$30",
+		"likes": "This mug that I bought with my roommates, we all bought one with the first letter of our names on it :) for me it’s ‘H’",
+		"beverage": "water"
 	},
 	{
 		
-		"mugImage": "AnnaBui.png",
-		"name": "Anna B",
-		"where": "Aug 2022 bed bath & beyond 6th ave nyc (first cup i ever bought for myself)",
-		"cost" : "$15-20",
-		"likes": "pleasant color, fit nicely in my hand, looks like good quality",
-		"beverage": "milk,tea,juice"
+		"mugImage": "images/erika.png",
+		"name": "Erika L, 21",
+		"where": "Gift from my mother",
+		"cost" : "N/a",
+		"likes": "The giraffes are very cute and the design is simple/minimalistic",
+		"beverage": "water"
+	},
+
+	{
+		
+		"mugImage": "images/AriRahne.png",
+		"name": "Ari R, 19",
+		"where": "it was a christmas gift from my friend who i spent the holiday with",
+		"cost" : "N/a",
+		"likes": "i told her that i really liked the shape and color of it, so she bought it for me as a last minute gift",
+		"beverage": "apple juice and coffee "
 	},
 	{
 		
-		"mugImage": "AnnaBui.png",
-		"name": "Anna B",
-		"where": "Aug 2022 bed bath & beyond 6th ave nyc (first cup i ever bought for myself)",
-		"cost" : "$15-20",
-		"likes": "pleasant color, fit nicely in my hand, looks like good quality",
-		"beverage": "milk,tea,juice"
+		"mugImage": "images/ChandniServia.png",
+		"name": "Chandni S, 19",
+		"where": "Birthday gift/ I love you gift from Lakeisha(roommate)",
+		"cost" : "N/a",
+		"likes": "I think lake bought it cuz she knows I love cats and Emma chamberlain",
+		"beverage": "Matcha"
 	},
 	{
 		
-		"mugImage": "AnnaBui.png",
-		"name": "Anna B",
-		"where": "Aug 2022 bed bath & beyond 6th ave nyc (first cup i ever bought for myself)",
-		"cost" : "$15-20",
-		"likes": "pleasant color, fit nicely in my hand, looks like good quality",
-		"beverage": "milk,tea,juice"
+		"mugImage": "images/Angela.png",
+		"name": "Angela W, 20",
+		"where": "I bought it for myself.",
+		"cost" : "$5",
+		"likes": "It’s a roblox face and I like roblox.",
+		"beverage": "I drink hot tea in my mug."
 	},
 	{
 		
-		"mugImage": "AnnaBui.png",
-		"name": "Anna B",
-		"where": "Aug 2022 bed bath & beyond 6th ave nyc (first cup i ever bought for myself)",
-		"cost" : "$15-20",
-		"likes": "pleasant color, fit nicely in my hand, looks like good quality",
-		"beverage": "milk,tea,juice"
+		"mugImage": "images/Bradley.png",
+		"name": "Bradley D, 20",
+		"where": "It was gift from my boyfriend's mom. She thought it was so cute and got one, then thought of me so she got me one as a present.",
+		"cost" : "N/a",
+		"likes": "I think it's so adorable and the memory makes me happy.",
+		"beverage": "Always tea!"
 	},
+
 	{
 		
-		"mugImage": "AnnaBui.png",
-		"name": "Anna B",
-		"where": "Aug 2022 bed bath & beyond 6th ave nyc (first cup i ever bought for myself)",
-		"cost" : "$15-20",
-		"likes": "pleasant color, fit nicely in my hand, looks like good quality",
-		"beverage": "milk,tea,juice"
-	},
+		"mugImage": "images/carolina.png",
+		"name": "Carolina N, 20",
+		"where": "Bought it from this vintage store I walked past one day and they had a small bin of $1 mugs",
+		"cost" : "$1",
+		"likes": "I love buying random mugs from vintage stores and I think the pricing was great because of the brand. ",
+		"beverage": "Tea, hot water"
+	}, 
 	{
 		
-		"mugImage": "AnnaBui.png",
-		"name": "Anna B",
-		"where": "Aug 2022 bed bath & beyond 6th ave nyc (first cup i ever bought for myself)",
-		"cost" : "$15-20",
-		"likes": "pleasant color, fit nicely in my hand, looks like good quality",
-		"beverage": "milk,tea,juice"
-	},
-	{
-		
-		"mugImage": "AnnaBui.png",
-		"name": "Anna B",
-		"where": "Aug 2022 bed bath & beyond 6th ave nyc (first cup i ever bought for myself)",
-		"cost" : "$15-20",
-		"likes": "pleasant color, fit nicely in my hand, looks like good quality",
-		"beverage": "milk,tea,juice"
-	},
-	{
-		
-		"mugImage": "AnnaBui.png",
-		"name": "Anna B",
-		"where": "Aug 2022 bed bath & beyond 6th ave nyc (first cup i ever bought for myself)",
-		"cost" : "$15-20",
-		"likes": "pleasant color, fit nicely in my hand, looks like good quality",
-		"beverage": "milk,tea,juice",
-	},
-	{
-		"title": "Eyes Wide Shut",
-		"year": 1999,
-		"alsoWriter" : true,
-		"posterImage": "https://upload.wikimedia.org/wikipedia/en/7/73/Eyes_Wide_Shut_%281999%29.png",
-		"runTime": "159 minutes",
-		"imdbLink": "https://www.imdb.com/title/tt0120663",
-		"imdbRating": 7.5
+		"mugImage": "images/dante.png",
+		"name": "Dante K, 20",
+		"where": "My sister made this mug for me as a gift",
+		"cost" : "N/a",
+		"likes": "I like it because my sister made it for my birthday and sent it all the way to nyc from Peru.",
+		"beverage": "Tea and coffee"
 	}
 ]

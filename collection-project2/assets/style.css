@@ -34,3 +34,11 @@ li {
 }
 
 .faded { opacity: 0.333 }
+
+img{
+	width:50vw;
+}
+
+#name{
+	color:red;
+}
