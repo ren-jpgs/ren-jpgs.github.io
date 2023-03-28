@@ -22,24 +22,31 @@ const renderItems = (collection) => {
 		// This can get annoying, so we can use “template literals” instead
 		const itemDetails =
 			`
-			<img src="${item.mugImage}">
+			<img class="mug" src="${item.mugImage}"> 
+			<div class= "info"> 
 			<h1 id="name">${item.name}</h1>
 			<p>${item.where}</p>
 			<p>"${item.cost}"</p>
 			<p>${item.likes}</p>
 			<p>${item.beverage}</p>
-			
+			</div>
 			`
 		listItem.insertAdjacentHTML('beforeend', itemDetails) // Which can we then insert
-
-		// // You can build logic from your data, too
-		// if (!item.alsoWriter) { // If this is `false`
-		// 	listItem.classList.add('faded') // Add this class to the whole `li`
-		// }
-
 		collectionList.appendChild(listItem) // Then add the whole `li` into the `ul`
+		
+
 	})
+		
 }
+
+	
+		let mug = document.querySelector(".mug")
+		let infoDiv = document.querySelector(".info")
+		mug.addEventListener("click",function(){ 
+	    infoDiv.classList.toggle (".visible") 
+		console.log("click")
+		})
+
 
 
 
@@ -50,3 +57,5 @@ fetch('assets/collection.json')
 		// And passes the data to the function, above!
 		renderItems(collection.reverse()) // In reverse order
 	})
+
+	

@@ -12,7 +12,7 @@
 		"mugImage": "images/celeste.png",
 		"name": "Celeste D, 20",
 		"where": "I bought it at a Starbucks in Nara, Japan on vacation!",
-		"cost" : "don't remember",
+		"cost" : "$25",
 		"likes": "They are only sold in that city so it made a nice souvenir and I really like green.",
 		"beverage": "Chai and coffee"
 	},
@@ -21,7 +21,7 @@
 		"mugImage": "images/drithi.png",
 		"name": "Drithi K, 20",
 		"where": "From Five Below, when my roommates and I went there for the first time.",
-		"cost" : "$5",
+		"cost" : "$6",
 		"likes": "it looks like the mug from the Office which is one of my favorite shows. it's also kind of ugly funny",
 		"beverage": "coffee"
 	},
@@ -30,7 +30,7 @@
 		"mugImage": "images/HelenWu.png",
 		"name": "Helen W, 20",
 		"where": "Bought it from Crate&Barrel",
-		"cost" : "$30",
+		"cost" : "I can’t remember the exact price but probably around $10+?",
 		"likes": "This mug that I bought with my roommates, we all bought one with the first letter of our names on it :) for me it’s ‘H’",
 		"beverage": "water"
 	},
@@ -49,7 +49,7 @@
 		"mugImage": "images/AriRahne.png",
 		"name": "Ari R, 19",
 		"where": "it was a christmas gift from my friend who i spent the holiday with",
-		"cost" : "N/a",
+		"cost" : "around 20 dollars",
 		"likes": "i told her that i really liked the shape and color of it, so she bought it for me as a last minute gift",
 		"beverage": "apple juice and coffee "
 	},
@@ -98,5 +98,77 @@
 		"cost" : "N/a",
 		"likes": "I like it because my sister made it for my birthday and sent it all the way to nyc from Peru.",
 		"beverage": "Tea and coffee"
+	},
+	{
+		
+		"mugImage": "images/kirti.png",
+		"name": "Kirti P, 20",
+		"where": "A gift from my roommate ",
+		"cost" : "N/a",
+		"likes": "I like it because I like the Beatles and the design of the mug is super colorful.",
+		"beverage": "Tea and coffee"
+	},
+	{
+		
+		"mugImage": "images/chloeyiu1.png",
+		"name": "Chloe Yiu, 20",
+		"where": "Me and my sister share it, our mom bought it for originally for me but she uses it sometimes too",
+		"cost" : "$30",
+		"likes": "It fits in my hand very well and the size of it is perfect for wanting more but not too much",
+		"beverage": "Tea and coffee"
+	},
+	{
+		
+		"mugImage": "images/Ren.png",
+		"name": "Ren K, 20",
+		"where": "I bought it from a garage sale back in California and brought it with me when I first moved to nyc my freshman year at Parsons",
+		"cost" : "$2",
+		"likes": "I love the illustrations of the weird looking babies holding a can of Campbell's soup. They just look so happy but their faces look a little cursed sometimes",
+		"beverage": "Tomato soup, lentil soup, tea, "
+	},
+	{
+		
+		"mugImage": "images/liia.png",
+		"name": "Liia I, 20",
+		"where": "Got it for my birthday, my friend bought it from a handmade ceramic shop",
+		"cost" : "$13-15",
+		"likes": "The glaze on it makes the whole mug look like an oil spill or acid wash design that looks super cool. I also like the organic shape of the mug which is pretty unique.",
+		"beverage": "Tea, coffee, hot chocolate"
+	},
+	{
+		
+		"mugImage": "images/Lakeisha.png",
+		"name": "Lakeisha E, 21",
+		"where": "Bought it at a book store",
+		"cost" : "$20",
+		"likes": "I like the color and the subtle text on it",
+		"beverage": "Tea, coffee, matcha"
+	},
+	{
+		
+		"mugImage": "images/Michelle.png",
+		"name": "Michelle C, 19",
+		"where": "My mother gifted it to me when she found out I was moving to NYC for college, it was a gift for my new apartment. Also, she got it at target.",
+		"cost" : "N/a",
+		"likes": "I like the color and I think the 'rise and shine'message is cute since it's a gift from my mom, but it also reminds me of the Kylie Jenner meme.",
+		"beverage": "Tea"
+	},
+	{
+		
+		"mugImage": "images/SamT.png",
+		"name": "Sam T, 21",
+		"where": "I bought this at a dishware store for myself",
+		"cost" : "$15",
+		"likes": "I love the scene of cats doing their own thing and the colors on this are so peaceful",
+		"beverage": "juice"
+	},
+	{
+		
+		"mugImage": "images/JasminGonzalez1.png",
+		"name": "Jasmin G, 19",
+		"where": "I got it from my cousin. He was abroad and sent back this mug. I didn’t expect anything but ever since this time he sent this mug back, I always look forward to receiving more from different places he travels too and have continued to collect them.",
+		"cost" : "N/a",
+		"likes": "I didn’t buy it but I like it because it reminded me of him even if he was on the other side of the world.Even if we didn’t talk because of time zone changes it was a way of feeling like he still kept me in mind.",
+		"beverage": "Tea, rice pudding, atole, hot chocolate"
 	}
 ]

@@ -1,3 +1,5 @@
+@import url('https://use.typekit.net/fhe7gzr.css');
+
 /* Just to make the demo easier to work with. */
 
 :root {
@@ -5,13 +7,17 @@
 }
 
 html{
-	background-color: rgb(0, 119, 255);
+	/* background-color: rgb(0, 119, 255); */
+	/* background-image: url(webopencab.png);
+	background-size: fit;
+    background-repeat: no-repeat; */
 }
 
 body {
 	font-family: sans-serif;
 	padding: var(--spacing);
 	padding-bottom: 33vh;
+
 }
 
 aside { margin-bottom: calc(4 * var(--spacing)); }
@@ -23,21 +29,61 @@ h2 { font-weight: bold; }
 
 ul {
 	display: grid;
-	gap: calc(4 * var(--spacing));
-	margin-top: calc(4 * var(--spacing));
+	/* gap: calc(4 * var(--spacing));
+	margin-top: calc(4 * var(--spacing)); */
+	grid-template-columns: auto auto auto auto auto;
 }
 
 li {
 	display: grid;
-	gap: var(--spacing);
+		text-align: center;
+
+		
+
 }
 
+p{
 
 
-img{
+	
+}
+
+#img{
 	width: 17vw;
+	column-gap: -20vw;
+	opacity: 100%;
 }
+/* #img:hover, #p:active {
+	background-color: gray;
+  } */
+
+/* img:hover .p{
+	opacity: 1;
+} */
 
 #name{
 	color:red;
+	font-family: "fig-sans", sans-serif;
+font-weight: bold;
+font-style: normal;
+}
+
+svg{
+	max-width: 100vw;
+	max-height: 100vh;
+	position: absolute;
+	z-index: -1;
+}
+
+.info{
+	display: none;
+}
+
+.visible{
+	display: inline-block;
+
+}
+
+.mug{
+	z-index: 1;
 }

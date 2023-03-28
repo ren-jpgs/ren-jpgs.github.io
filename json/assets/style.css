@@ -1,0 +1,46 @@
+/* Just to make the demo easier to work with. */
+
+:root {
+	--spacing: 1em;
+}
+
+html{
+	background-color: rgb(0, 119, 255);
+}
+
+body {
+	font-family: sans-serif;
+	padding: var(--spacing);
+	padding-bottom: 33vh;
+}
+
+aside { margin-bottom: calc(4 * var(--spacing)); }
+
+h1 { font-size: 200%; }
+
+h2 { font-weight: bold; }
+
+
+ul {
+	display: grid;
+	/* gap: calc(4 * var(--spacing));
+	margin-top: calc(4 * var(--spacing)); */
+	grid-template-columns: auto auto auto;
+}
+
+li {
+	display: grid;
+	gap: var(--spacing);
+		padding: 20px;
+		text-align: center;
+}
+
+
+
+img{
+	width: 17vw;
+}
+
+#name{
+	color:red;
+}
