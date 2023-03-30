@@ -161,8 +161,8 @@ svg{
 ul {
 	display: grid;
 	gap: -30em;
-	margin-top: 19vw;
-	grid-template-columns: 13vw 30vw 20vw 20vw;
+	margin-top: 21vw;
+	grid-template-columns: 13vw 33vw 20vw 20vw;
 grid-template-rows: 30vw 30vw 35vw 10vw;
 justify-content: center;
 position:relative;
