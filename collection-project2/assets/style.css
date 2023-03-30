@@ -1,10 +1,11 @@
 @import url('https://use.typekit.net/fhe7gzr.css');
 
-@font-face {
+/* @font-face {
 	font-family: AUTHENTICSans;
-	src: url(AUTHENTICSans.otf);
+	src: url('AUTHENTICSans.otf') format('otf');
 	font-weight: 90;
-  }
+
+  } */
 html{
 	background-color: rgb(0, 119, 255);
 	cursor: url(‘cursorhand.png’), auto;
