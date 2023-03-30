@@ -7,7 +7,7 @@
 }
 
 html{
-	/* background-color: rgb(0, 119, 255); */
+	background-color: rgb(0, 119, 255);
 	/* background-image: url(webopencab.png);
 	background-size: fit;
     background-repeat: no-repeat; */
@@ -29,54 +29,59 @@ h2 { font-weight: bold; }
 
 ul {
 	display: grid;
-	/* gap: calc(4 * var(--spacing));
-	margin-top: calc(4 * var(--spacing)); */
-	grid-template-columns: auto auto auto auto auto;
+	gap: -30em;
+	margin-top: 1vw;
+	grid-template-columns: 10vw 10vw auto 10vw auto;
+grid-template-rows: 15vw 15vw 15vw 15vw;
 }
 
-li {
-	display: grid;
-		text-align: center;
-
-		
-
-}
-
-p{
-
-
-	
-}
-
-#img{
-	width: 17vw;
-	column-gap: -20vw;
-	opacity: 100%;
-}
-/* #img:hover, #p:active {
-	background-color: gray;
-  } */
-
-/* img:hover .p{
-	opacity: 1;
-} */
 
 #name{
-	color:red;
+	color:rgb(0, 104, 55);
 	font-family: "fig-sans", sans-serif;
 font-weight: bold;
 font-style: normal;
+font-size: 4vh
+}
+
+#title{
+	color:rgb(0, 104, 55);
+	font-family: "fig-sans", sans-serif;
+font-weight: bold;
+font-style: normal;
+font-size: 2.5vh
 }
 
 svg{
-	max-width: 100vw;
-	max-height: 100vh;
+	position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+	margin: 0;
+	padding: 0;
 	position: absolute;
 	z-index: -1;
+	
 }
 
 .info{
 	display: none;
+	width: 90%;
+	height: 75%;
+	position: fixed;
+	background-image: url(background.png);
+	background-size: cover;
+    background-repeat: repeat; 
+	/* border-radius: 100px; */
+	padding: 7vw;
+	left:50%;
+	top:50%;
+	align-items: center;
+	justify-content: center;
+	z-index: 4;
+	transform: translate(-50%, -50%);
+
 }
 
 .visible{
@@ -86,4 +91,53 @@ svg{
 
 .mug{
 	z-index: 1;
+	border-width: 1vh;
+	border-color: red;
+	width: 15vw;
+	column-gap: 100vw;
+	opacity: 100%;
+	row-gap: -100vh;
+	
+
+
+	
+}
+
+.close{
+	display:block;
+	margin-top: -50vh;
+	margin-left: -2vw;
+	text-align: left;
+	/* margin-left: 2vw;
+	margin-top: 3vh; */
+	justify-content: left;
+	transform: translate(-50%, -50%);
+}
+
+.popup{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	position:relative;
+	text-align: center;
+	margin-top:20vh;
+	top:0%;
+	transform: translate(0%, -50%);
+}
+
+.thumbnail{
+	width: 50%;
+	margin-left: -10vw;
+	top:0;
+	margin-right:0;
+	
+}
+
+.information{
+	top:0;
+	background-color: white;
+	border-radius: 50px;
+	padding: 2vw;
+	display:block;
+	width: 75%;
 }
