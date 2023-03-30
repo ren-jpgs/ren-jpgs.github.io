@@ -1,16 +1,12 @@
 @import url('https://use.typekit.net/fhe7gzr.css');
 
-/* Just to make the demo easier to work with. */
-
-:root {
-	--spacing: 1em;
-}
-
+@font-face {
+	font-family: AUTHENTICSans;
+	src: url(AUTHENTICSans.woff);
+  }
 html{
 	background-color: rgb(0, 119, 255);
-	/* background-image: url(webopencab.png);
-	background-size: fit;
-    background-repeat: no-repeat; */
+	cursor: url(‘cursorhand.png’), auto;
 }
 
 body {
@@ -18,6 +14,10 @@ body {
 	padding: var(--spacing);
 	padding-bottom: 33vh;
 
+}
+
+body{
+	cursor: url(‘cursorhand.png’), auto;
 }
 
 aside { margin-bottom: calc(4 * var(--spacing)); }
@@ -30,9 +30,12 @@ h2 { font-weight: bold; }
 ul {
 	display: grid;
 	gap: -30em;
-	margin-top: 1vw;
-	grid-template-columns: 10vw 10vw auto 10vw auto;
-grid-template-rows: 15vw 15vw 15vw 15vw;
+	margin-top: 3.5vw;
+	grid-template-columns: 10vw 10vw 25vw 10vw auto;
+grid-template-rows: 13vw 13vw 15vw ;
+justify-content: center;
+position:relative;
+text-align: center;
 }
 
 
@@ -93,15 +96,14 @@ svg{
 	z-index: 1;
 	border-width: 1vh;
 	border-color: red;
-	width: 15vw;
+	width: 10vw;
 	column-gap: 100vw;
 	opacity: 100%;
 	row-gap: -100vh;
 	
-
-
 	
 }
+
 
 .close{
 	display:block;
@@ -126,8 +128,8 @@ svg{
 }
 
 .thumbnail{
-	width: 50%;
-	margin-left: -10vw;
+	width: 45%;
+	margin-left: 3vw;
 	top:0;
 	margin-right:0;
 	
@@ -140,4 +142,20 @@ svg{
 	padding: 2vw;
 	display:block;
 	width: 75%;
+	margin-left: 10vw;
+}
+
+@media (max-width: 600px){
+
+ul {
+	display: grid;
+	gap: -30em;
+	margin-top: 3.5vw;
+	grid-template-columns: 10vw 20vw 10vw 10vw;
+grid-template-rows: 15vw 15vw 15vw 15vw;
+justify-content: center;
+position:relative;
+text-align: center;
+}
+
 }
