@@ -21,7 +21,7 @@ const renderItems = (collection) => {
 
 		// This can get annoying, so we can use “template literals” instead
 		const itemDetails =
-			`
+			
 			<div class="mug">
             <img src="${item.mugImage}">
             <div class="info">
@@ -38,7 +38,7 @@ const renderItems = (collection) => {
 			</div>
 			</div>
             </div>
-			`
+			
 		listItem.insertAdjacentHTML('beforeend', itemDetails) // Which can we then insert
 		collectionList.appendChild(listItem) // Then add the whole `li` into the `ul`
 	
