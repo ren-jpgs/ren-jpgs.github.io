@@ -1,0 +1,7 @@
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+<g fill="gold">      
+ <ellipse cx="-15" cy="20" rx="50" ry="25" fill="gold" />
+ <ellipse cx="45" cy="20" rx="30" ry="15" fill="gold" />
+ <ellipse cx="100" cy="20" rx="50" ry="20" fill="gold" />
+</g>
+  </svg>
