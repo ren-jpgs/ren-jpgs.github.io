@@ -1,0 +1,35 @@
+:root{
+    --spacing: 20px
+
+}
+
+@media (min-width:600px){
+    :root{
+        --spacing: 32px
+    }
+}
+
+body{
+    font-family: sans-serif;
+    display: grid;
+}
+
+header{
+    background-color:green
+}
+
+h1{
+    font-size:200%;
+}
+
+aside{
+    background-color: rgb(43, 137, 226);
+}
+
+footer{
+    background-color: yellowgreen;
+}
+
+.inset{
+
+}
