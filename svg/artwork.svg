@@ -1,7 +1,65 @@
 <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-<g fill="gold">      
- <ellipse cx="-15" cy="20" rx="50" ry="25" fill="gold" />
- <ellipse cx="45" cy="20" rx="30" ry="15" fill="gold" />
- <ellipse cx="100" cy="20" rx="50" ry="20" fill="gold" />
-</g>
+     <rect x="60" y="44.5" width="10"  height="6" fill="beige"/>
+      <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:rgb(12, 46, 130);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:beige;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect x="10" y="40" rx="50" ry="60" width="55" height="14" fill="url(#grad1)" ></rect>
+
+
+<defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:beige;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(12, 46, 130);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect x="10.3" y="49.4" rx="50" ry="60" width="3" height="1.2" fill="url(#grad2)" ></rect>
+
+<defs>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="0%" y2="250%">
+      <stop offset="0%" style="stop-color:rgb(12, 46, 130);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:white;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <circle  cx="15" cy="47" r="1.5"  fill="url(#grad3)"></circle>
+
+<defs>
+    <radialGradient id="rad1">
+      <stop offset="0%" style="stop-color:rgb(12, 46, 130);stop-opacity:1" />
+      <stop offset="120%" style="stop-color:black;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  <circle  cx="15" cy="47" r="1"  fill="url(#rad1)"></circle>
+
+<ellipse cx="15.3" cy="46.5" rx=".3" ry=".12" fill="white"/>
+
+<polygon height="1" width="5" points="0,5 55,10 90,50"  fill="lime" ></polygon>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </svg>
