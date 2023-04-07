@@ -38,7 +38,9 @@ figure{
 	align-items: center;
 
 }
-
+ h4{
+	color:black;
+ }
 figcaption{
 	color: darkgray;
 }
@@ -46,15 +48,19 @@ figcaption{
 img{
 	aspect-ratio: 1 / 1;
 	display:block;
-	background-color: rgb(38, 34, 34);
+	background-color: rgb(231, 230, 230);
 	width:60vw;
 	height:30vh;
 	stroke-width: 5vh;
-	stroke: burlywood;
+	stroke: rgb(243, 238, 233);
 
 
 }
 
+svg{
+	display:block;
+	
+}
 /* .border{
 	position: absolute;
 	width: 50vh;
@@ -77,5 +83,6 @@ img{
 	img{
 		width:auto;
 		height:50vh;
+		justify-content: center;
 	}
 }
