@@ -12,6 +12,9 @@
 body{
     font-family: sans-serif;
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px min-content 1fr min-content;
+    min-height: 100vh;
 }
 
 header{
