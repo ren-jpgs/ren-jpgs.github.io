@@ -1,38 +1,113 @@
 :root{
-    --spacing: 20px
+    --spacing: 20px;
 
 }
 
 @media (min-width:600px){
     :root{
-        --spacing: 32px
+        --spacing: 32px;
     }
 }
 
 body{
+    background-color:rgb(255, 208, 0);
     font-family: sans-serif;
-    display: grid;
+
     grid-template-columns: 1fr;
     grid-template-rows: 150px min-content 1fr min-content;
     min-height: 100vh;
+    grid-template-areas:
+    "header"
+    "links"
+    "grid"
+    "footer";
+}
+
+@media (min-width: 600px){
+    body{
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 200px 1fr min-content;
+    grid-template-areas: 
+    "header header"
+    "links grid"
+    "footer footer";
+}
+}
+
+@media (min-width: 1280){
+
 }
 
 header{
-    background-color:green
+    position:sticky;
+    top:0;
+    background-image:url(cheeseassortment.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5vh;
+   border: 5px solid white;
+    grid-area: header;
+    text-align: center;
 }
 
 h1{
-    font-size:200%;
+    font-size:500%;
+    color:azure;
+    align-content: center;
 }
 
+main{
+
+    grid-area: grid;
+}
 aside{
-    background-color: rgb(43, 137, 226);
+    background-color: rgb(226, 134, 43);
+    grid-area: links;
+    text-align: center;
+    border-radius: 5vh;
+   border: 2px solid rgb(0, 0, 0);
+
 }
 
 footer{
-    background-color: yellowgreen;
+    background-color: rgb(255, 255, 255);
 }
 
 .inset{
+    padding:var(--spacing);
+}
 
+#cheese-list{
+    --column-count: 6;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    column-gap: var(--spacing);
+    row-gap: calc(var(--spacing) * 3);
+    font-size: 5vh;
+}
+
+
+#cheese-list li{
+    background-color: goldenrod;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width:600px){
+    body{
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 200px 1fr min-content;
+        grid-template-areas: 
+        "header header"
+        "links grid"
+        "footer footer";
+    }
+
+    #cheese-list{
+        --column-count:5;
+
+    }
 }

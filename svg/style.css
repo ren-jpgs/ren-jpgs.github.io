@@ -72,7 +72,7 @@ ellipse{
 }
 
 #head{
-	fill:linergradeient(black);
+	fill: linear-gradient(black, red);
 }
 
 rect{
