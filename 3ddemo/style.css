@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+}
+
+model-viewer {
+    width: 80vw;
+    height: 80vh;
+  }
+  
+  .interaction-prompt{
+    font-size: 150px;
+  }
