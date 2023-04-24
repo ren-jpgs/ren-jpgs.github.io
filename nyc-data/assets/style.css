@@ -1,6 +1,6 @@
 body {
     --spacing: 24px;
-
+background-color: tomato;
     font-family: sans-serif;
     padding: var( --spacing);
     display: grid;

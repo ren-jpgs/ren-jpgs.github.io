@@ -18,14 +18,14 @@ const parseData = (data) => {
 
 	// Go through each item in the object
 	data.forEach(rat => {
-		if (rat.borough == 'Brooklyn') brooklynCount = brooklynCount + 1 // Increment the counter
+		if (rat.borough == 'BROOKLYN') brooklynCount = brooklynCount + 1 // Increment the counter
 		// if (rat.borough == 'brooklyn') brooklynCount++ // Shorthand for incrementing
-        else if (rat.borough == 'Manhattan') manhattanCount = manhattanCount + 1
-		else if (rat.borough == 'Bronx') bronxCount = bronxCount + 1
-		else if (rat.borough == 'Queens') queensCount = queensCount + 1
-        else if (rat.borough == 'Statenisland') statenislandCount = statenislandCount + 1
-		else if (rat.borough == 'Unspecified') unspecifiedCount = unspecifiedCount + 1
-        else if (rat.borough == 'novalue') novalueCount = novalueCount + 1
+        else if (rat.borough == 'MANHATTAN') manhattanCount = manhattanCount + 1
+		else if (rat.borough == 'BRONX') bronxCount = bronxCount + 1
+		else if (rat.borough == 'QUEENS') queensCount = queensCount + 1
+        else if (rat.borough == 'STATENISLAND') statenislandCount = statenislandCount + 1
+		else if (rat.borough == 'UNSPECIFIED') unspecifiedCount = unspecifiedCount + 1
+        else novalueCount = novalueCount + 1
 	})
 
 	// Some telemetry!
@@ -61,9 +61,45 @@ const parseData = (data) => {
 
 
 // Go get the data!
-fetch(url + '?$limit=250000') // Appends a higher limit; the default is only 1000
-	.then(response => response.json())
-	.then(data => {
-			localData = data // Save the data to our local variable, so we don’t have to re-request
-			parseData(localData) // And parse it!
-		})
+// fetch(url + '?$limit=250000') // Appends a higher limit; the default is only 1000
+// 	.then(response => response.json())
+// 	.then(data => {
+// 			localData = data // Save the data to our local variable, so we don’t have to re-request
+// 			parseData(localData) // And parse it!
+
+//             // console.log(data)
+// 		})
+
+
+
+// This got pretty complicated, but it should make the API less annoying! 🤞
+caches.open('cachedData') // Set up a cache for our data
+	.then(cache => {
+		// See if there is already a cached response for our dataset
+		cache.match(url)
+			.then(response => response.json())
+			.then(data => {
+				console.log('Loading data from cache…')
+				localData = data // Save the data out to our local, global variable
+				parseData(localData) // And parse it!
+			})
+			// If there is not a cache, let’s get and make one
+			.catch(error => {
+				fetch(url + '?$select=count(*)') // First, go get the total number of rows (entries)
+					.then(response => response.json())
+					.then(data => {
+						let rowCount = data[0].count // Get the count out of this response
+						// Use the count as the limit for the API request, to get the full dataset
+						fetch(url + '?$limit=' + rowCount)
+							.then(response => {
+								cache.put(url, response.clone()) // Cache a copy for next time
+								return response.json()
+							})
+							.then(data => {
+								console.log('Loading data from API…')
+								localData = data // Same as above!
+								parseData(localData)
+							})
+					})
+			})
+	})
