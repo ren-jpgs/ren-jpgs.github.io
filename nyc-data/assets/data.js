@@ -23,8 +23,8 @@ const parseData = (data) => {
         else if (rat.borough == 'MANHATTAN') manhattanCount = manhattanCount + 1
 		else if (rat.borough == 'BRONX') bronxCount = bronxCount + 1
 		else if (rat.borough == 'QUEENS') queensCount = queensCount + 1
-        else if (rat.borough == 'STATENISLAND') statenislandCount = statenislandCount + 1
-		else if (rat.borough == 'UNSPECIFIED') unspecifiedCount = unspecifiedCount + 1
+        else if (rat.borough == 'STATEN ISLAND') statenislandCount = statenislandCount + 1
+		else if (rat.borough == 'Unspecified') unspecifiedCount = unspecifiedCount + 1
         else novalueCount = novalueCount + 1
 	})
 
@@ -33,18 +33,18 @@ const parseData = (data) => {
     console.log('Manhattan: ' + manhattanCount)
 	console.log('Bronx: ' + bronxCount)
 	console.log('Queens: ' + queensCount)
-    console.log('Statenisland: ' + statenislandCount)
+    console.log('Staten Island: ' + statenislandCount)
 	console.log('Unspecified: ' + unspecifiedCount)
-    console.log('novalue: ' + novalueCount)
+    console.log('Novalue: ' + novalueCount)
 
 	// Add CSS variables (custom properties) on the graph, with the counts
 	graph.style.setProperty('--Brooklyn', brooklynCount)
     graph.style.setProperty('--Manhattan', manhattanCount)
 	graph.style.setProperty('--Bronx', bronxCount)
 	graph.style.setProperty('--Queens', queensCount)
-    graph.style.setProperty('--Statenisland', statenislandCount)
+    graph.style.setProperty('--Staten Island', statenislandCount)
     graph.style.setProperty('--Unspecified', unspecifiedCount)
-	graph.style.setProperty('--novalue', novalueCount)
+	graph.style.setProperty('--Novalue', novalueCount)
 }
 
 // Watch for any change on the dropdown

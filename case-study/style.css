@@ -20,6 +20,7 @@ font-style: normal;
 font-size: 10vh;
 text-align: center;
 padding-bottom: 4vh;
+padding:6vh ;
 }
 
 .summary{
@@ -40,14 +41,19 @@ font-weight: bold;
 font-style: normal;
     font-size: 6vh;
     width:50%;
+    padding: 6vh;
+    margin-top:10vh;
 }
 
 .figsans{
-    color: white;
+    color: rgb(0, 104, 55);
     font-family: "fig-sans", sans-serif;
 font-weight: bold;
 font-style: normal;
-    font-size: 5vh;
+    font-size: 8vh;
+    padding:6vh;
+    margin-top: -9vh;
+    text-align: center;
 }
 
 .sansserif{
@@ -55,7 +61,8 @@ font-style: normal;
     font-family: sans-serif;
 font-weight: bold;
 font-style: normal;
-    font-size: 5vh;
+    font-size: 8vh;
+    text-align: center;
 
 }
 #content{
@@ -74,6 +81,9 @@ font-weight: bold;
 font-style: normal;
     font-size: 6vh;
     width:50%;
+    position: absolute;
+    margin-top: -50vh;
+    margin-left: 100vh ;
 }
 
 .homeclosed{
@@ -82,7 +92,31 @@ font-style: normal;
 font-weight: bold;
 font-style: normal;
     font-size: 6vh;
-    width:50%;
+    width:60%;
+    padding:6vh;
+    margin-top: 10vh;
+}
+
+
+.hand{
+    width:60%;
+    padding:6vh;
+
+}
+
+.home{
+    width:52%;
+    padding:6vh;
+
+}
+
+.info{
+    width:52%;
+    padding:6vh;
+    position: absolute;
+    margin-top: -59.5vh;
+    margin-left: 83vh;
+
 }
 
 .homephone{
@@ -91,7 +125,17 @@ font-style: normal;
 font-weight: bold;
 font-style: normal;
     font-size: 6vh;
-    width:50%;
+    padding: 6vh;
+    width:45%;
+}
+
+.infophone{
+    position: absolute;
+    width:45%;
+    padding:6vh;
+    position: absolute;
+    margin-top: -117vh;
+    margin-left: 95vh;
 }
 
 
