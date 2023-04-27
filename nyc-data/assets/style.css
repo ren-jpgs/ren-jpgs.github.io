@@ -1,5 +1,6 @@
 body {
     --spacing: 24px;
+
 background-color: tomato;
     font-family: sans-serif;
     padding: var( --spacing);
@@ -48,18 +49,18 @@ select {
 }
 
 /* Calculate from the JS variable. */
-#graph .Brooklyn { height: calc(var(--brooklyn) / var(--total) * 100%); }
-#graph .Manhattan { height: calc(var(--Manhattan) / var(--total) * 100%); }
-#graph .Bronx { height: calc(var(--Bronx) / var(--total) * 100%); }
-#graph .Queens { height: calc(var(--Queens) / var(--total) * 100%); }
-#graph .Statenisland { height: calc(var(--StatenIsland) / var(--total) * 100%); }
-#graph .Unspecified { height: calc(var(--Unspecified) / var(--total) * 100%); }
-#graph .novalue { height: calc(var(--novalue) / var(--total) * 100%); }
+#graph .brooklyn { width: calc(var(--Brooklyn) / var(--total) * 100%); }
+#graph .manhattan { width: calc(var(--Manhattan) / var(--total) * 100%); }
+#graph .bronx { width: calc(var(--Bronx) / var(--total) * 100%); }
+#graph .queens { width: calc(var(--Queens) / var(--total) * 100%); }
+#graph .statenisland { width: calc(var(--StatenIsland) / var(--total) * 100%); }
+#graph .unspecified { width: calc(var(--Unspecified) / var(--total) * 100%); }
+#graph .novalue { width: calc(var(--novalue) / var(--total) * 100%); }
 
-.Brooklyn{ background-color: rgb(105, 23, 23); }
-.Manhattan { background-color: rgb(71, 70, 82); }
-.Bronx{ background-color: rgb(20, 3, 170) }
-.Queens{ background-color: rgb(175, 175, 43) }
-.Statenisland{ background-color: rgb(8, 137, 14) }
-.Unspecifed{ background-color: rgb(123, 20, 83) }
-.Novalue{ background-color: rgb(201, 122, 12) }
+.brooklyn{ background-color: rgb(105, 23, 23); }
+.manhattan { background-color: rgb(71, 70, 82); }
+.bronx{ background-color: rgb(20, 3, 170) }
+.queens{ background-color: rgb(175, 175, 43) }
+.statenisland{ background-color: rgb(8, 137, 14) }
+.unspecifed{ background-color: rgb(123, 20, 83) }
+.novalue{ background-color: rgb(201, 122, 12) }
