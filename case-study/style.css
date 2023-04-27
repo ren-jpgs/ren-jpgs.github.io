@@ -1,0 +1,98 @@
+@import url('https://use.typekit.net/fhe7gzr.css');
+
+@font-face {
+        font-family: "AUTHENTICSans";
+        src: url("AUTHENTICSana-90.otf");
+	font-weight: 90;
+
+  }
+
+  html{
+	background-color: rgb(0, 119, 255);
+	cursor: url(‘cursorhand.png’), auto;
+}
+
+h1{
+    color: white;
+	font-family: "fig-sans", sans-serif;
+font-weight: bold;
+font-style: normal;
+font-size: 10vh;
+text-align: center;
+padding-bottom: 4vh;
+}
+
+.summary{
+font-family: sans-serif;
+color: white;
+font-size: 2.5vh;
+max-width: 50ch;
+padding: 6vh;
+padding-bottom: .5vh;
+
+
+
+}
+.typefaces{
+    color: white;
+    font-family: "fig-sans", sans-serif;
+font-weight: bold;
+font-style: normal;
+    font-size: 6vh;
+    width:50%;
+}
+
+.figsans{
+    color: white;
+    font-family: "fig-sans", sans-serif;
+font-weight: bold;
+font-style: normal;
+    font-size: 5vh;
+}
+
+.sansserif{
+    color: white;
+    font-family: sans-serif;
+font-weight: bold;
+font-style: normal;
+    font-size: 5vh;
+
+}
+#content{
+    font-family: sans-serif;
+    color: white;
+    font-size: 2.5vh;
+    max-width: 60ch;
+    padding: 6vh;
+
+}
+
+.sketch{
+    color: white;
+    font-family: "fig-sans", sans-serif;
+font-weight: bold;
+font-style: normal;
+    font-size: 6vh;
+    width:50%;
+}
+
+.homeclosed{
+    color: white;
+    font-family: "fig-sans", sans-serif;
+font-weight: bold;
+font-style: normal;
+    font-size: 6vh;
+    width:50%;
+}
+
+.homephone{
+    color: white;
+    font-family: "fig-sans", sans-serif;
+font-weight: bold;
+font-style: normal;
+    font-size: 6vh;
+    width:50%;
+}
+
+
+
