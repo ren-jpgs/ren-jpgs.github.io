@@ -37,7 +37,7 @@ select {
     --total: calc(var(--brooklyn) + var(--manhattan) + var(--bronx) + var(--queens) + var(--statenisland)) + var(--unspecified) + var(--novalue);
 
     display: flex;
-    height: calc(var(--spacing) * 3);
+    height: 80vh;
     overflow: hidden;
 }
 
@@ -49,12 +49,12 @@ select {
 
 /* Calculate from the JS variable. */
 #graph .Brooklyn { height: calc(var(--brooklyn) / var(--total) * 100%); }
-#graph .Manhattan { height: calc(var(--manhattan) / var(--total) * 100%); }
-#graph .Bronx { height: calc(var(--bronx) / var(--total) * 100%); }
-#graph .Queens { height: calc(var(--queens) / var(--total) * 100%); }
-#graph .Statenisland { height: calc(var(--statenisland) / var(--total) * 100%); }
-#graph .Unspecified { height: calc(var(--unspecified) / var(--total) * 100%); }
-#graph .Novalue { height: calc(var(--novalue) / var(--total) * 100%); }
+#graph .Manhattan { height: calc(var(--Manhattan) / var(--total) * 100%); }
+#graph .Bronx { height: calc(var(--Bronx) / var(--total) * 100%); }
+#graph .Queens { height: calc(var(--Queens) / var(--total) * 100%); }
+#graph .Statenisland { height: calc(var(--StatenIsland) / var(--total) * 100%); }
+#graph .Unspecified { height: calc(var(--Unspecified) / var(--total) * 100%); }
+#graph .novalue { height: calc(var(--novalue) / var(--total) * 100%); }
 
 .Brooklyn{ background-color: rgb(105, 23, 23); }
 .Manhattan { background-color: rgb(71, 70, 82); }
