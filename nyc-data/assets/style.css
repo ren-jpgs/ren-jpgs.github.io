@@ -13,7 +13,6 @@ html{
     background-color: #000000;
 }
 .home {
-
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -23,18 +22,34 @@ html{
     
   }
 
-  .content {
 
-    position: absolute;
+  .content {
+    position: relative;
     top: 100%;
     width: 100%;
-    height: 1000vh;
+    height: 500vh;
     background-image: url(asphalt.jpeg);
     opacity:30% ;
     background-size: contain;
     background-position: center;
     /* background-repeat: no-repeat; */
 
+  }
+
+  .circle {
+    background-image: url(ratgraph2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+    margin: 5px; /* Add margin between circles for spacing */
+  }
+
+  
+  .circle-container {
+    display: flex;
+    /* justify-content: center; */
+    align-items: flex-end;
   }
 
   .backDoor
@@ -62,6 +77,9 @@ html{
 
 .door
 {
+    border-color:  #242424;
+    border-style:solid;
+    border-width: .5vh;
     background-image: url(sewercover.png);
     background-size: cover;
     background-position: center;
@@ -87,19 +105,28 @@ html{
     cursor: pointer;
   }
 
-
+  
 .about{
-    background-color: #ffffff;
-    border-color: #000000;
+    background-color: #3d3d3d;
+    border-color: #ffffff;
     border-style: solid;
     border-width: .7vh;
     padding: .2vh 3vh;
     font-size: 4vh;
-    color: #000000;
+    color:  #ffffff;
     position: absolute;
     border-radius: 25% / 50%;
     margin-left: 10vh;
     margin-top: 9vh;
+}
+
+.aboutinfo{
+    position: relative;
+    padding: 10vh;
+    font-size: 3vh;
+    text-align: center;
+    justify-items: center;
+    max-width: 60ch;
 }
 
 .about:hover {
@@ -107,13 +134,13 @@ html{
   }
 
 .opendata{
-    background-color: #ffffff;
-    border-color: #000000;
+    background-color: #3d3d3d;
+    border-color:  #ffffff;
     border-style: solid;
     border-width: .7vh;
     padding: .2vh 3vh;
     font-size: 4vh;
-    color: #000000;
+    color:  #ffffff;
     position: absolute;
     border-radius: 17% / 50%;
     margin-left: 30vh;
@@ -242,7 +269,7 @@ html{
     }
 }
 body {
-    height: 1000vh;
+    height: 500vh;
     color:#eee;
     font-weight: 300;
     font-family: 'Darumadrop One', cursive;
@@ -308,7 +335,7 @@ select {
 } */
 
 /* Calculate from the JS variable. */
-#graph .Brooklyn { height: calc(var(--Brooklyn) / var(--total) * 100%); }
+/* #graph .Brooklyn { height: calc(var(--Brooklyn) / var(--total) * 100%); }
 #graph .Manhattan { height: calc(var(--Manhattan) / var(--total) * 100%); }
 #graph .Bronx { height: calc(var(--Bronx) / var(--total) * 100%); }
 #graph .Queens { height: calc(var(--Queens) / var(--total) * 100%); }
@@ -323,6 +350,10 @@ select {
 .StatenIsland{ background-color: rgb(8, 137, 14) }
 .Unspecifed{ background-color: rgb(123, 20, 83) }
 .novalue{ background-color: rgb(201, 122, 12) }
+ */
+
+
+ 
 
 @media (max-width: 800px){
     h1 { 

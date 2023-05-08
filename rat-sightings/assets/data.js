@@ -39,6 +39,19 @@ const parseData = (data) => {
 	console.log('Unspecified: ' + unspecifiedCount)
     console.log('Novalue: ' + novalueCount)
 
+const boroughCounts = [
+	{ borough: 'Brooklyn', count: brooklynCount },
+	{ borough: 'Manhattan', count: manhattanCount },
+	{ borough: 'Bronx', count: bronxCount },
+	{ borough: 'Queens', count: queensCount },
+	{ borough: 'Staten Island', count: statenislandCount }
+  ];
+  const dividedBoroughCounts = boroughCounts.map(item => ({
+	borough: item.borough,
+	count: item.count / 10000
+  }));
+  console.log(dividedBoroughCounts)
+
 	// Add CSS variables (custom properties) on the graph, with the counts
 	brooklyndiv.style.setProperty('--brooklyn', brooklynCount)
     manhattandiv.style.setProperty('--manhattan', manhattanCount)
@@ -48,6 +61,8 @@ const parseData = (data) => {
     graph.style.setProperty('--unspecified', unspecifiedCount)
 	graph.style.setProperty('--novalue', novalueCount)
 }
+
+	
 
 // Watch for any change on the dropdown
 // dropdown.oninput = () => {
@@ -62,15 +77,16 @@ const parseData = (data) => {
 // }
 
 
-// Go get the data!
+// // Go get the data!
 // fetch(url + '?$limit=250000') // Appends a higher limit; the default is only 1000
 // 	.then(response => response.json())
 // 	.then(data => {
-// 			localData = data // Save the data to our local variable, so we don’t have to re-request
-// 			parseData(localData) // And parse it!
+// 		localData = data // Save the data to our local variable, so we don’t have to re-request
+// 		parseData(localData) // And parse it!
+		
+// 		console.log(dividedBoroughCounts) // Display dividedBoroughCounts here
 
-//             // console.log(data)
-// 		})
+// 	})
 
 
 
