@@ -339,14 +339,30 @@ h3 {
     -webkit-text-stroke: .5px rgb(255, 255, 255);
 }
 
+h4 {
+   
+    position: relative;
+    font-size: 4vh;
+    font-weight: bold;
+    font-family: 'Darumadrop One', cursive;
+    white-space: nowrap;
+    margin-top: 0;
+    left: 50%;
+    color:#050505;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 5vh;
+    -webkit-text-stroke: .5px rgb(147, 147, 147);
+}
+
 
 
 label { opacity: 50%; }
 
-/* select, ul {
-    background-color: #eee;
+select,
+ul {
     border-radius: calc(var(--spacing) / 4);
-} */
+}
 
 select {
     margin-left: calc(var(--spacing) / 4);
@@ -358,37 +374,62 @@ select {
 #graph {
     /* Add up the individual counts, from the JS. */
     --total: calc(var(--brooklyn) + var(--manhattan) + var(--bronx) + var(--queens) + var(--statenisland)) + var(--unspecified) + var(--novalue);
-margin-top: 10vh;
+margin-top: 40vh;
     display: flex;
     height: 80vh;
     overflow: hidden;
 }
 
-/* Ease the widths, when we change via dropdown. */
-/* #graph li { 
+
+
+
+#graph2 {
+    /* Add up the individual counts, from the JS. */
+    --total: calc(var(--brooklyn) + var(--manhattan) + var(--bronx) + var(--queens) + var(--statenisland) + var(--unspecified) + var(--novalue));
+    
+    display: flex;
+    flex-direction: column; /* Set the flex direction to column */
+    justify-content: flex-end; /* Align items to the bottom */
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Ease the heights, when we change via dropdown. */
+#graph2 li {
     transition: height 1s ease-in-out;
-    border-right: 3px solid #eee;
-} */
+    height: 5vw; /* Set the width to 5vw */
+    border-bottom: 25px rgb(0, 0, 0); /* Use border-bottom instead of border-right */
+}
 
-/* Calculate from the JS variable. */
-/* #graph .Brooklyn { height: calc(var(--Brooklyn) / var(--total) * 100%); }
-#graph .Manhattan { height: calc(var(--Manhattan) / var(--total) * 100%); }
-#graph .Bronx { height: calc(var(--Bronx) / var(--total) * 100%); }
-#graph .Queens { height: calc(var(--Queens) / var(--total) * 100%); }
-#graph .StatenIsland { height: calc(var(--StatenIsland) / var(--total) * 100%); }
-#graph .Unspecified { height: calc(var(--Unspecified) / var(--total) * 100%); }
-#graph .novalue { height: calc(var(--novalue) / var(--total) * 100%); }
+#graph2 li:hover::after {
+    content: attr(data-count);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-top: 10px;
+}
 
-.Brooklyn{ background-color: rgb(105, 23, 23); }
-.Manhattan { background-color: rgb(71, 70, 82); }
-.Bronx{ background-color: rgb(20, 3, 170) }
-.Queens{ background-color: rgb(175, 175, 43) }
-.StatenIsland{ background-color: rgb(8, 137, 14) }
-.Unspecifed{ background-color: rgb(123, 20, 83) }
-.novalue{ background-color: rgb(201, 122, 12) }
- */
+#graph2 .brooklyn { width: calc(var(--brooklyn) / 85 * 1px); } /* Use width instead of height */
+#graph2 .manhattan { width: calc(var(--manhattan) / 85 * 1px); } /* Use width instead of height */
+#graph2 .bronx { width: calc(var(--bronx) / 85 * 1px); } /* Use width instead of height */
+#graph2 .queens { width: calc(var(--queens) / 85 * .5px); } /* Use width instead of height */
+#graph2 .statenisland { width: calc(var(--statenisland) / 85 * 1px); } /* Use width instead of height */
+#graph2 .unspecified { width: calc(var(--unspecified) / 85 * 1px); } /* Use width instead of height */
+#graph2 .novalue { width: calc(var(--novalue) / 85 * 1px); } /* Use width instead of height */
 
-
+.brooklyn { background-color: rgb(105, 23, 23); }
+.manhattan { background-color: rgb(71, 70, 82); }
+.bronx { background-color: rgb(20, 3, 170) }
+.queens { background-color: rgb(175, 175, 43) }
+.statenisland { background-color: rgb(8, 137, 14) }
+.unspecified { background-color: rgb(123, 20, 83)}
  
 
 @media (max-width: 800px){

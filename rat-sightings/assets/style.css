@@ -1,8 +1,8 @@
 
 body {
     --spacing: 24px;
-background-color:blue;
-    padding: var( --spacing);
+    background-color: blue;
+    padding: var(--spacing);
     display: grid;
     gap: calc(var(--spacing) * 2);
 }
@@ -18,10 +18,12 @@ h1 {
     font-weight: bold;
 }
 
-label { opacity: 50%; }
+label {
+    opacity: 50%;
+}
 
-select, ul {
-    
+select,
+ul {
     border-radius: calc(var(--spacing) / 4);
 }
 
@@ -34,19 +36,20 @@ select {
 
 #graph {
     /* Add up the individual counts, from the JS. */
-    --total: calc(var(--brooklyn) + var(--manhattan) + var(--bronx) + var(--queens) + var(--statenisland)) + var(--unspecified) + var(--novalue);
-
+    --total: calc(var(--brooklyn) + var(--manhattan) + var(--bronx) + var(--queens) + var(--statenisland) + var(--unspecified) + var(--novalue));
+    
     display: flex;
+    flex-direction: column; /* Set the flex direction to column */
+    justify-content: flex-end; /* Align items to the bottom */
     height: 100vh;
     overflow: hidden;
-    align-items: flex-end;
 }
 
-/* Ease the widths, when we change via dropdown. */
-#graph li { 
+/* Ease the heights, when we change via dropdown. */
+#graph li {
     transition: height 1s ease-in-out;
-    width: 5vw;
-    border-right: 25px rgb(0, 0, 0);
+    height: 5vw; /* Set the width to 5vw */
+    border-bottom: 25px rgb(0, 0, 0); /* Use border-bottom instead of border-right */
 }
 
 #graph li:hover::after {
@@ -57,44 +60,28 @@ select {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     color: #fff;
     font-size: 1.2rem;
     text-align: center;
     padding-top: 10px;
 }
 
-#graph .brooklyn { height: calc(var(--brooklyn) / 85 * 1px); }
-#graph .manhattan { height: calc(var(--manhattan) / 85 * 1px); }
-#graph .bronx { height: calc(var(--bronx) / 85* 1px); }
-#graph .queens { height: calc(var(--queens) / 85 * .5px); }
-#graph .statenisland { height: calc(var(--statenisland) / 85 * 1px); }
-#graph .Unspecified { height: calc(var(--unspecified) / 85 * 1px); }
-#graph .ovalue { height: calc(var(--novalue) / 85 * 1px); }
+#graph .brooklyn { width: calc(var(--brooklyn) / 85 * 1px); } /* Use width instead of height */
+#graph .manhattan { width: calc(var(--manhattan) / 85 * 1px); } /* Use width instead of height */
+#graph .bronx { width: calc(var(--bronx) / 85 * 1px); } /* Use width instead of height */
+#graph .queens { width: calc(var(--queens) / 85 * .5px); } /* Use width instead of height */
+#graph .statenisland { width: calc(var(--statenisland) / 85 * 1px); } /* Use width instead of height */
+#graph .unspecified { width: calc(var(--unspecified) / 85 * 1px); } /* Use width instead of height */
+#graph .novalue { width: calc(var(--novalue) / 85 * 1px); } /* Use width instead of height */
 
-
-
-.brooklyn{ background-color: rgb(105, 23, 23); }
+.brooklyn { background-color: rgb(105, 23, 23); }
 .manhattan { background-color: rgb(71, 70, 82); }
-.bronx{ background-color: rgb(20, 3, 170) }
-.queens{ background-color: rgb(175, 175, 43) }
-.statenisland{ background-color: rgb(8, 137, 14) }
-.unspecifed{ background-color: rgb(123, 20, 83) }
-.novalue{ background-color: rgb(201, 122, 12) }
+.bronx { background-color: rgb(20, 3, 170) }
+.queens { background-color: rgb(175, 175, 43) }
+.statenisland { background-color: rgb(8, 137, 14) }
+.unspecified { background-color: rgb(123, 20, 83)
 
-.circle {
-    background-image: url(ratgraph2.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 60px;
-    height: 60px;
-    
-    margin: 5px; /* Add margin between circles for spacing */
-  }
-
-  .circle-container {
-    display: flex; /* Use flexbox to align circles horizontally */
-  }
 
 /* Calculate from the JS variable. */
 /* #graph .brooklyn { height: calc(var(--brooklyn) / var(--total) * 100%); }
