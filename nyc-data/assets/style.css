@@ -36,7 +36,7 @@ html{
     justify-content: center;
     /* background-repeat: no-repeat; */
     margin: 0 auto;
-padding-top: 30vh;
+padding-top: 15vh;
   }
 
   #info{
@@ -321,6 +321,22 @@ h2 {
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+}
+
+h3 {
+   
+    position: relative;
+    font-size: 8vh;
+    font-weight: bold;
+    font-family: 'Darumadrop One', cursive;
+    white-space: nowrap;
+    margin-top: 0;
+    left: 50%;
+    color:#3d3d3d;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 5vh;
+    -webkit-text-stroke: .5px rgb(255, 255, 255);
 }
 
 
