@@ -61,6 +61,21 @@ padding-top: 15vh;
     align-content: center;
 }
 
+   
+.numbers-of-rep {
+    display: grid;
+    grid-template-columns: repeat(8, .12fr);
+    grid-gap: .3px; /* Adjust the value to control the column spacing */
+    align-items: center;
+    justify-items: center; /* Center the items horizontally */
+    margin-left: 30%;
+  }
+.boroughs{
+    display: grid;
+    grid-column: inherit;
+    /* margin-top: 1vh; */
+}
+
   .circle {
     background-image: url(ratgraph2.webp);
     background-repeat: no-repeat;
@@ -79,6 +94,57 @@ padding-top: 15vh;
     opacity: 1;
   }
 
+.ratgraph{
+    position: absolute;
+    left: 30%;
+    margin-top: 0;
+}
+
+
+#brooklyn:hover{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 1;
+}
+#manhattan:hover{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+    font-size: 14px;
+    opacity: 1;
+    width: 800px;
+}
+#bronx:hover{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 600px;
+    opacity: 1;
+}
+#queens:hover{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 500px;
+    opacity: 1;
+}
+#statenisland:hover{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100px;
+    opacity: 1;
+}
   .backDoor
 {
     background-image: url(rat-in-hole.png);
@@ -151,7 +217,9 @@ padding-top: 15vh;
 
 .about:hover {
     cursor: pointer;
+    filter: drop-shadow(0 7px 20px #ffffff);
   }
+
 
 .opendata{
     background-color: #3d3d3d;
@@ -170,6 +238,7 @@ padding-top: 15vh;
 
 .opendata:hover {
     cursor: pointer;
+    filter: drop-shadow(0 7px 20px #ffffff);
   }
 
   .opendata a {
@@ -342,27 +411,53 @@ h3 {
 h4 {
    
     position: relative;
-    font-size: 4vh;
+    font-size: 4.5vh;
     font-weight: bold;
     font-family: 'Darumadrop One', cursive;
     white-space: nowrap;
     margin-top: 0;
-    left: 50%;
+    margin-left: 10%;
     color:#050505;
-    transform: translateX(-50%);
-    text-align: center;
-    padding: 5vh;
-    -webkit-text-stroke: .5px rgb(147, 147, 147);
+    /* text-align: center; */
+    padding: 3.5vh;
+    -webkit-text-stroke: .5px rgb(177, 177, 177);
 }
+
+
+h5 {
+   
+    font-size: 4.5vh;
+    font-weight: bold;
+    font-family: 'Darumadrop One', cursive;
+    color:#050505;
+    -webkit-text-stroke: .5px rgb(177, 177, 177);
+    /* text-align: center; */
+}
+
+h6 {
+   position: absolute;
+   margin-top: -4%;
+   font-size: 3vh;
+    font-weight: bold;
+    font-family: 'Darumadrop One', cursive;
+    color:#ffffff;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+
+
 
 
 
 label { opacity: 50%; }
 
-select,
-ul {
+/* select, ul {
+    background-color: #eee;
     border-radius: calc(var(--spacing) / 4);
-}
+} */
 
 select {
     margin-left: calc(var(--spacing) / 4);
@@ -372,66 +467,21 @@ select {
 }
 
 #graph {
-    /* Add up the individual counts, from the JS. */
     --total: calc(var(--brooklyn) + var(--manhattan) + var(--bronx) + var(--queens) + var(--statenisland)) + var(--unspecified) + var(--novalue);
-margin-top: 40vh;
+margin-top: 70vh;
     display: flex;
     height: 80vh;
     overflow: hidden;
-}
-
-
-
-
-#graph2 {
-    /* Add up the individual counts, from the JS. */
-    --total: calc(var(--brooklyn) + var(--manhattan) + var(--bronx) + var(--queens) + var(--statenisland) + var(--unspecified) + var(--novalue));
     
-    display: flex;
-    flex-direction: column; /* Set the flex direction to column */
-    justify-content: flex-end; /* Align items to the bottom */
-    height: 100vh;
-    overflow: hidden;
 }
 
-/* Ease the heights, when we change via dropdown. */
-#graph2 li {
-    transition: height 1s ease-in-out;
-    height: 5vw; /* Set the width to 5vw */
-    border-bottom: 25px rgb(0, 0, 0); /* Use border-bottom instead of border-right */
+.graph{
+    margin-top: 12vh;
+    
 }
 
-#graph2 li:hover::after {
-    content: attr(data-count);
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-size: 1.2rem;
-    text-align: center;
-    padding-top: 10px;
-}
 
-#graph2 .brooklyn { width: calc(var(--brooklyn) / 85 * 1px); } /* Use width instead of height */
-#graph2 .manhattan { width: calc(var(--manhattan) / 85 * 1px); } /* Use width instead of height */
-#graph2 .bronx { width: calc(var(--bronx) / 85 * 1px); } /* Use width instead of height */
-#graph2 .queens { width: calc(var(--queens) / 85 * .5px); } /* Use width instead of height */
-#graph2 .statenisland { width: calc(var(--statenisland) / 85 * 1px); } /* Use width instead of height */
-#graph2 .unspecified { width: calc(var(--unspecified) / 85 * 1px); } /* Use width instead of height */
-#graph2 .novalue { width: calc(var(--novalue) / 85 * 1px); } /* Use width instead of height */
-
-.brooklyn { background-color: rgb(105, 23, 23); }
-.manhattan { background-color: rgb(71, 70, 82); }
-.bronx { background-color: rgb(20, 3, 170) }
-.queens { background-color: rgb(175, 175, 43) }
-.statenisland { background-color: rgb(8, 137, 14) }
-.unspecified { background-color: rgb(123, 20, 83)}
- 
-
+  
 @media (max-width: 800px){
     h1 { 
         font-size: 15vh;

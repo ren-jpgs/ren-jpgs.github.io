@@ -32,7 +32,6 @@ window.addEventListener('scroll', () => {
   }
 });
 
-
   
 // Your data URL
 const url = 'https://data.cityofnewyork.us/resource/3q43-55fe.json'
@@ -145,74 +144,4 @@ caches.open('cachedData') // Set up a cache for our data
 			})
 	})
 
-	// Your data URL
-const url = 'https://data.cityofnewyork.us/resource/3q43-55fe.json'
-const graph = document.querySelector('#graph') // Get out graph element (`const`, does not change)
-const dropdown = document.querySelector('#shift') // Get the dropdown menu
-const brooklyndiv = document.querySelector(".brooklyn")
-const manhattandiv = document.querySelector(".manhattan")
-
-let localData = [] // Set up an empty object for our local data (`let` because it will change)
-
-// Do something with the data!
-const parseData = (data) => { 
-	// Set up variables for the counts
-	let brooklynCount = 0 // These are `let` because they will change
-	let manhattanCount = 0
-	let bronxCount = 0
-	let queensCount = 0
-    let statenislandCount = 0
-    let unspecifiedCount = 0
-    let novalueCount = 0
-
-	// Go through each item in the object
-	data.forEach(rat => {
-		if (rat.borough == 'BROOKLYN') brooklynCount = brooklynCount + 1 // Increment the counter
-		// if (rat.borough == 'brooklyn') brooklynCount++ // Shorthand for incrementing
-        else if (rat.borough == 'MANHATTAN') manhattanCount = manhattanCount + 1
-		else if (rat.borough == 'BRONX') bronxCount = bronxCount + 1
-		else if (rat.borough == 'QUEENS') queensCount = queensCount + 1
-        else if (rat.borough == 'STATEN ISLAND') statenislandCount = statenislandCount + 1
-		else if (rat.borough == 'Unspecified') unspecifiedCount = unspecifiedCount + 1
-        else novalueCount = novalueCount + 1
-	})
-
-	// Some telemetry!
-	console.log('Brooklyn: ' + brooklynCount)
-    console.log('Manhattan: ' + manhattanCount)
-	console.log('Bronx: ' + bronxCount)
-	console.log('Queens: ' + queensCount)
-    console.log('Staten Island: ' + statenislandCount)
-	console.log('Unspecified: ' + unspecifiedCount)
-    console.log('Novalue: ' + novalueCount)
-
-const boroughCounts = [
-	{ borough: 'Brooklyn', count: brooklynCount },
-	{ borough: 'Manhattan', count: manhattanCount },
-	{ borough: 'Bronx', count: bronxCount },
-	{ borough: 'Queens', count: queensCount },
-	{ borough: 'Staten Island', count: statenislandCount }
-  ];
-  const dividedBoroughCounts = boroughCounts.map(item => ({
-	borough: item.borough,
-	count: item.count / 10000
-  }));
-  console.log(dividedBoroughCounts)
-
-	// Add CSS variables (custom properties) on the graph, with the counts
-	brooklyndiv.style.setProperty('--brooklyn', brooklynCount)
-    manhattandiv.style.setProperty('--manhattan', manhattanCount)
-	graph.style.setProperty('--bronx', bronxCount)
-	graph.style.setProperty('--queens', queensCount)
-    graph.style.setProperty('--statenisland', statenislandCount)
-    graph.style.setProperty('--unspecified', unspecifiedCount)
-	graph.style.setProperty('--novalue', novalueCount)
-}
-
-brooklyndiv.setAttribute('data-count', brooklynCount);
-	manhattandiv.setAttribute('data-count', manhattanCount);
-	bronxdiv.setAttribute('data-count', bronxCount);
-	queensdiv.setAttribute('data-count', queensCount);
-	statenislanddiv.setAttribute('data-count', statenislandCount);
-	unspecifieddiv.setAttribute('data-count', unspecifiedCount);
-	novaluediv.setAttribute('data-count', novalueCount);
+	
