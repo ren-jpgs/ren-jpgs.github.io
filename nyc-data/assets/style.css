@@ -358,7 +358,7 @@ select {
 #graph {
     /* Add up the individual counts, from the JS. */
     --total: calc(var(--brooklyn) + var(--manhattan) + var(--bronx) + var(--queens) + var(--statenisland)) + var(--unspecified) + var(--novalue);
-
+margin-top: 10vh;
     display: flex;
     height: 80vh;
     overflow: hidden;
