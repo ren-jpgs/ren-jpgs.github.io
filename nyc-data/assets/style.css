@@ -23,7 +23,7 @@ html{
   }
 
 
-  .content {
+  #content {
     position: relative;
     top: 100%;
     width: 100%;
@@ -137,7 +137,7 @@ padding-top: 15vh;
     opacity: 1;
 }
 #statenisland:hover{
-    background-color: rgb(79, 78, 78);
+    background-color: rgb(212, 212, 212);
     color: white;
     padding: 5px;
     border-radius: 5px;
@@ -481,11 +481,10 @@ margin-top: 70vh;
     
 }
 
-.trash{
-    position: absolute;
 
-    width: 2000px; /* set the width instead of size */
-
+#trash{
+    width: 300%;
+}
   
 @media (max-width: 800px){
     h1 { 
